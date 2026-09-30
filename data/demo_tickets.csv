@@ -1,0 +1,49 @@
+text,intent
+My card was charged twice for the same purchase,payment
+The payment keeps getting declined at checkout,payment
+Money was deducted but my order did not go through,payment
+Why is the transaction still pending on my account,payment
+I do not recognize this charge on my card,payment
+The checkout page says payment failed,payment
+I was billed an extra amount,payment
+My bank transfer has not appeared yet,payment
+My parcel has still not arrived,delivery
+Where can I track my order,delivery
+The delivery is late and I need it urgently,delivery
+My package was sent to the wrong address,delivery
+The courier marked my order delivered but I did not receive it,delivery
+When will order ORD-12345 be delivered,delivery
+The tracking link is not updating,delivery
+I received only part of my shipment,delivery
+I want a refund for a damaged product,refund
+How do I return the item and get my money back,refund
+My refund has not reached my account,refund
+Please cancel my order and issue a refund,refund
+The refund amount is incorrect,refund
+I returned the product last week but no refund is visible,refund
+What is the refund policy,refund
+I need help with a return,refund
+I forgot my password and cannot sign in,account_access
+My account is locked after too many login attempts,account_access
+Please help me reset my password,account_access
+I cannot access my profile,account_access
+Someone may have accessed my account,account_access
+The verification code never arrives,account_access
+I changed phones and cannot log in,account_access
+My username is not recognized,account_access
+The mobile app crashes every time I open it,technical_support
+The website shows an error when I upload a file,technical_support
+The app is very slow after the update,technical_support
+I cannot connect the device to WiFi,technical_support
+The checkout button is not working in my browser,technical_support
+My software license key does not activate,technical_support
+The screen freezes during setup,technical_support
+Notifications stopped working in the app,technical_support
+What are your customer support hours,other
+Can I change my email preferences,other
+I have a question about product features,other
+Thank you for the helpful service,other
+How can I update my mailing address,other
+Do you offer gift wrapping,other
+I need general information about your company,other
+Can you connect me with a sales representative,other

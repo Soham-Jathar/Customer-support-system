@@ -1,0 +1,15 @@
+query,expected_document_id
+I was charged twice for one card purchase,PAY-001
+Why did I get two card-payment charges,PAY-001
+I do not recognize this transaction,PAY-002
+There is an unauthorized cash withdrawal,PAY-002
+Where is my replacement card,CARD-001
+Can you track my new card,CARD-001
+My bank transfer is pending,TRF-001
+The recipient has not received my transfer,TRF-001
+I forgot my passcode,ACC-001
+My account is locked and I cannot verify it,ACC-001
+Why was the exchange rate different on my card payment,FX-001
+How are cash conversion rates calculated,FX-001
+I want to talk to a human agent,GEN-001
+Please transfer me to a supervisor,GEN-001

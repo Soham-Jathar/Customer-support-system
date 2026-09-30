@@ -1,0 +1,9 @@
+# Optional research modules. Install after requirements.txt.
+sentence-transformers>=3.0,<4
+faiss-cpu>=1.8,<2
+transformers>=4.45,<5
+datasets>=3.0,<4
+accelerate>=1.0,<2
+torch>=2.4,<3
+spacy>=3.8,<4
+psycopg[binary]>=3.2,<4

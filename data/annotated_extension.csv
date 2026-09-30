@@ -1,0 +1,61 @@
+text,intent
+The payment page charged my debit card but displayed an error,payment
+My credit card was declined even though it has enough balance,payment
+Why did I receive two receipts for one order,payment
+The bank app shows a charge that I did not authorize,payment
+I paid with UPI but the merchant says payment is missing,payment
+My payment was reversed without any explanation,payment
+The transaction amount is different from the checkout total,payment
+Please check why my card payment is pending,payment
+I was billed after cancelling the purchase,payment
+The payment gateway keeps timing out,payment
+The delivery estimate has passed and my order is missing,delivery
+My courier package is stuck at the sorting center,delivery
+Can I update the delivery address before dispatch,delivery
+The tracking status has not changed for four days,delivery
+My package arrived damaged after shipping,delivery
+The driver delivered my parcel to a neighbour without permission,delivery
+I need the shipping options for a new purchase,delivery
+My express delivery has been delayed,delivery
+The item was sent to the old address,delivery
+Can you help locate my parcel,delivery
+I want to return this item because it is defective,refund
+I have not received the refund for my cancelled order,refund
+Can I get a refund if the product does not fit,refund
+The return was accepted but the money is still pending,refund
+I need the refund policy before buying,refund
+The refund was sent to the wrong payment method,refund
+How long does refund verification take,refund
+I received less money than the approved refund,refund
+Please start a return for my purchase,refund
+My return label has expired and I need help,refund
+The password reset email is not arriving,account_access
+I am locked out after entering the wrong password,account_access
+My two factor authentication code does not work,account_access
+I cannot update the phone number linked to my account,account_access
+The app says my account is temporarily suspended,account_access
+I need to recover access to my old profile,account_access
+Why does login keep redirecting me to the sign in page,account_access
+My account details were changed without my permission,account_access
+I want to remove an old device from my account,account_access
+The registration form will not accept my email address,account_access
+The web page is blank after I sign in,technical_support
+The Android app closes when I tap the profile tab,technical_support
+I get error code E204 during installation,technical_support
+The application cannot sync data on mobile internet,technical_support
+The file upload stops at ninety percent,technical_support
+My browser shows a server error on the support portal,technical_support
+The desktop client freezes after the latest update,technical_support
+Push notifications are delayed by several hours,technical_support
+The search feature returns no results in the app,technical_support
+The microphone setting is unavailable in the mobile app,technical_support
+Where can I find the product documentation,other
+I need to change my newsletter subscription,other
+How do I contact customer service during weekends,other
+Can I place an order using a gift card,other
+Please tell me about your warranty coverage,other
+I want to update my preferred language,other
+How do I receive a copy of my invoice,other
+Can a customer representative call me back,other
+What payment methods do you accept,other
+I have a general question before ordering,other

@@ -1,0 +1,21 @@
+text,expected_priority,expected_escalation,reason
+I do not recognize this transaction on my card,critical,true,unauthorized card payment
+I do not recognize this cash withdrawal,critical,true,unrecognized cash withdrawal
+My card was stolen this morning,critical,true,stolen payment instrument
+I think someone has compromised my account,critical,true,account compromise
+There is fraudulent activity on my account,critical,true,suspected fraud
+My card was charged twice for one purchase,high,false,duplicate card payment
+My card payment was declined at a shop,high,false,declined payment
+I am locked out of my mobile banking account,high,false,account lockout
+This transfer is urgent and has not arrived,high,false,urgent transfer issue
+Why was I charged a fee for this card payment,medium,false,fee explanation
+I forgot my passcode,medium,false,account recovery
+When will my refund be processed,medium,false,refund review
+The exchange rate on my card payment seems wrong,medium,false,exchange-rate review
+I need to change my personal details,medium,false,account maintenance
+How do I get a virtual card,low,false,product information
+Which countries are supported,low,false,general information
+Thank you for your help,low,false,positive message
+Please connect me to a human agent,low,true,explicit human request
+I want to speak to a supervisor,low,true,explicit human request
+I have a problem but I cannot explain it clearly,low,true,uncertain routing requires human verification

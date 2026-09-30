@@ -1,0 +1,9 @@
+[
+  {"id":"PAY-001","title":"Card payment and duplicate-charge policy","content":"Card-payment and duplicate-charge reports are reviewed by the Payments team. The system must not promise a reversal or refund until transaction records are verified."},
+  {"id":"PAY-002","title":"Unauthorized transaction policy","content":"Potentially unauthorized card payments, cash withdrawals, or transfers are security-sensitive. The ticket is escalated to a human agent for secure investigation."},
+  {"id":"CARD-001","title":"Card delivery and replacement policy","content":"For card delivery, replacement, or tracking questions, Card Operations verifies the request and delivery records. The system must not invent a card-arrival date."},
+  {"id":"TRF-001","title":"Bank transfer policy","content":"For pending, failed, or recipient-related transfers, Transfers Support verifies transfer details before providing an outcome. Automated responses must not claim a transfer has completed."},
+  {"id":"ACC-001","title":"Account security policy","content":"For passcode resets, account lockouts, or verification questions, Account Security uses the approved recovery process. Never request passwords, PINs, or full security credentials in support messages."},
+  {"id":"FX-001","title":"Currency exchange policy","content":"Exchange-rate and cash-conversion questions require reference to the applicable policy or live pricing system. The system must not invent an exchange rate or fee."},
+  {"id":"GEN-001","title":"Human agent policy","content":"Customers may request a human support agent at any time. Explicit human-agent requests are routed to the Human Escalation Queue."}
+]
