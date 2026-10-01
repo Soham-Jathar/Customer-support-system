@@ -6,7 +6,7 @@ import os
 import uuid
 from datetime import datetime, timezone
 
-from sqlalchemy import DateTime, String, Text, create_engine
+from sqlalchemy import DateTime, String, Text, create_engine, inspect, text
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, sessionmaker
 
 from src.config import ROOT
@@ -39,6 +39,7 @@ class Ticket(Base):
     escalation_reasons: Mapped[str] = mapped_column(Text, default="[]")
     entities: Mapped[str] = mapped_column(Text, default="{}")
     retrieved_sources: Mapped[str] = mapped_column(Text, default="[]")
+    attachment_name: Mapped[str | None] = mapped_column(String(255), nullable=True)
     agent_outcome: Mapped[str | None] = mapped_column(Text, nullable=True)
 
     def as_dict(self) -> dict:
@@ -51,6 +52,7 @@ class Ticket(Base):
             "escalated": self.escalated == "true", "status": self.status,
             "escalation_reasons": json.loads(self.escalation_reasons),
             "entities": json.loads(self.entities), "retrieved_sources": json.loads(self.retrieved_sources),
+            "attachment_name": self.attachment_name,
             "agent_outcome": self.agent_outcome,
         }
 
@@ -83,9 +85,13 @@ class TicketReview(Base):
 
 def initialise_database() -> None:
     Base.metadata.create_all(bind=engine)
+    # SQLite create_all does not add new columns to an existing local database.
+    if DATABASE_URL.startswith("sqlite") and "attachment_name" not in {column["name"] for column in inspect(engine).get_columns("tickets")}:
+        with engine.begin() as connection:
+            connection.execute(text("ALTER TABLE tickets ADD COLUMN attachment_name VARCHAR(255)"))
 
 
-def save_ticket(result: dict, customer_message: str) -> dict:
+def save_ticket(result: dict, customer_message: str, attachment_name: str | None = None) -> dict:
     with SessionLocal() as session:
         ticket = Ticket(
             customer_message=mask_sensitive_data(customer_message), intent=result["intent"], confidence=str(result["confidence"]),
@@ -93,6 +99,7 @@ def save_ticket(result: dict, customer_message: str) -> dict:
             escalated=str(result["escalate_to_human"]).lower(),
             escalation_reasons=json.dumps(result["escalation_reasons"]), entities=json.dumps(mask_entities(result["entities"])),
             retrieved_sources=json.dumps(result.get("retrieved_sources", [])),
+            attachment_name=attachment_name,
         )
         session.add(ticket)
         session.commit()

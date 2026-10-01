@@ -11,6 +11,7 @@ An explainable NLP system that understands customer messages, classifies the pro
 - Operational entity extraction for order, tracking, and transaction references, amounts, and dates.
 - Sentence Transformers + FAISS policy retrieval when available, with a visible TF-IDF fallback.
 - Separate React customer portal and access-key-protected agent console, FastAPI API, SQLite development persistence, and optional PostgreSQL deployment.
+- Customer attachment intake for TXT, PDF, and DOCX complaints (2 MB maximum). Text is extracted in memory, analysed by the existing pipeline, and the original file is not retained.
 - End-to-end ticket lifecycle: customer-safe status tracking, agent-reviewed corrections, resolution notes, and restricted CSV feedback export for future retraining.
 
 ## Start the application

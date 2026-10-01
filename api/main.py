@@ -7,7 +7,7 @@ from io import StringIO
 from pathlib import Path
 from collections import Counter
 
-from fastapi import Depends, FastAPI, HTTPException, Response
+from fastapi import Depends, FastAPI, File, Form, HTTPException, Response, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from sqlalchemy import select
@@ -16,6 +16,7 @@ from src.database import SessionLocal, Ticket, TicketReview, initialise_database
 from src.config import ROOT
 from src.auth import require_agent, verify_agent_key
 from src.service import analyse_ticket
+from src.attachments import extract_attachment_text
 
 
 @asynccontextmanager
@@ -101,6 +102,22 @@ def analyse(request: TicketRequest) -> dict:
     result = analyse_ticket(request.message)
     if request.save:
         result["ticket"] = save_ticket(result, request.message)
+    return result
+
+
+@app.post("/tickets/analyse-attachment")
+async def analyse_attachment(file: UploadFile = File(...), save: bool = Form(True)) -> dict:
+    """Extract a supported attachment in memory, then use the normal pipeline."""
+    attachment = await extract_attachment_text(file)
+    result = analyse_ticket(attachment.text)
+    result["attachment"] = {
+        "name": attachment.filename,
+        "format": attachment.extension.upper(),
+        "text_characters": len(attachment.text),
+        "stored": False,
+    }
+    if save:
+        result["ticket"] = save_ticket(result, attachment.text, attachment_name=attachment.filename)
     return result
 
 
