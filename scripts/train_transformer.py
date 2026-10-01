@@ -1,4 +1,4 @@
-"""Fine-tune DistilBERT on the same BANKING77 labels as the baseline."""
+"""Fine-tune DistilBERT on the same generic fine-intent labels as the baseline."""
 from __future__ import annotations
 
 import argparse
@@ -73,7 +73,7 @@ def main(data_path: str, output_dir: str) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data", default="data/demo_tickets.csv")
-    parser.add_argument("--output", default="models/distilbert-intent")
+    parser.add_argument("--data", default="data/generic/train.csv")
+    parser.add_argument("--output", default="models/distilbert-generic-intent")
     args = parser.parse_args()
     main(args.data, args.output)

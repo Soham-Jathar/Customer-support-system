@@ -1,0 +1,1027 @@
+text,query_type,intent
+i want assistance contacting somebody,other,human_request
+where to unsubscribe from the corporate newsletter,other,newsletter
+where to file a consumer complaint,other,general_complaint
+I am trying to find information about a gold account removal,account_access,account_management
+how do I see what hours I can contact customer support?,other,human_request
+i dont know what i have to do to contact a person,other,human_request
+I want assistance seeing the withdrawal fee,other,cancellation_fee
+I have an erroor trying to change the address,delivery,delivery_address
+wanna see the statusof order {{Order Number}} i need help,delivery,track_order
+"I purchased some items, cancel order {{Order Number}}",other,order_cancellation
+can ya help me cancel my corporate newsletter subscription,other,newsletter
+can you help me to inform of signup errors?,account_access,account_access
+help me filing a complaint,other,general_complaint
+problems with cancelling order {{Order Number}},other,order_cancellation
+I need the refund policy before buying,refund,refund_request
+is it possible to track purchase {{Order Number}}?,delivery,track_order
+I do not know what to do to see the shipment methods,delivery,delivery_options
+help me  see the eta of the purchase {{Order Number}},delivery,track_order
+"I no longer want order {{Order Number}}, how do I cancel it?",other,order_cancellation
+I want help to check how soon can I expect my package,delivery,delivery_delay
+i do not know how i can see the reimbursement current status,refund,refund_pending
+show me in which cases can I request to be refunded,refund,refund_policy
+I need help shoppimg several items,other,product_information
+"I want to see what payment options are accepted, help me",payment,payment_methods
+I need help to make a complaint against your business,other,general_complaint
+I want help listing your accepted payment methods,payment,payment_methods
+help me order solme of ur article,other,product_information
+I need information about opening pro accounts,account_access,account_creation
+My express delivery has been delayed,delivery,delivery_delay
+I want help to lodge a consumer reclamation,other,general_complaint
+i dont know what to do to locate my bill #37777,other,invoice_request
+I want to see the status of order {{Order Number}},delivery,track_order
+I want to unsubscribe from your company newsletter,other,newsletter
+help to see your accepted paymentt methods,payment,payment_methods
+correcting info on {{Account Category}} account,account_access,account_management
+help seeing when will my package arrive,delivery,delivery_delay
+need to cancel purchase {{Order Number}},other,order_cancellation
+how could I use the {{Account Category}} profile?,account_access,account_management
+i need help with opening a {{Account Type}} account,account_access,account_creation
+is it possible to open a {{Account Type}} account for my fiance?,account_access,account_creation
+I need assistance to report troubles with online payment,payment,payment_issue
+getting money back,refund,refund_request
+i have got to change the details on my user i need help,account_access,account_management
+I am trying to receive a reimbursement,refund,refund_request
+where do I see my rebate status?,refund,refund_pending
+i try to check the early exit penalties,other,cancellation_fee
+will you show me the accepted payment methods?,payment,payment_methods
+assistance to crete a platinum account,account_access,account_creation
+how could I obtain rebates?,refund,refund_request
+is there an e-mail to send my feedback about a service?,other,product_information
+I am trying to get reimbursements of my money,refund,refund_request
+i do not know what to do to make a claim against ur company,other,general_complaint
+want assistance lising your accepted payment methods,payment,payment_methods
+I do not know how to write a comment about your services,other,product_information
+i try to sap some items of order {{Order Number}},other,order_change
+"you are not helpful, how to chat with an agent?",other,human_request
+could I place an order from {{Delivery Country}} ?,delivery,delivery_options
+what do I need to do to see the methods for shipment?,delivery,delivery_options
+I'm trying to check if there are any updates on the rebate,refund,refund_pending
+can you help  me report problems with a sign-up?,account_access,account_access
+I do not know how I could cancel purchase {{Order Number}},other,order_cancellation
+"I want to check the payment modalities, I need  help",payment,payment_methods
+Why does the mobile app show an unexpected error when I sign in?,technical_support,technical_login_error
+use premium account,account_access,account_management
+help me to cancel purchase {{Order Number}},other,order_cancellation
+I don't know what I have to do to modify my delivery address,delivery,delivery_address
+under which circumstances can I ask for my money back?,refund,refund_policy
+want help checking ur reimbursement poliicy,refund,refund_policy
+will you show me how long it takes for the parcel to arrive?,delivery,delivery_delay
+create standard account for wife,account_access,account_creation
+wana correct order {{Order Number}},other,order_change
+can you help me switching a fucking item of order {{Order Number}}?,other,order_change
+notifying of errors creating profile,account_access,account_access
+help me modifying purchase {{Order Number}},other,order_change
+how do i submit some goddamn feedback for a product,other,product_information
+"I haven't signed up yet, help me to create a pro account",account_access,account_creation
+i cant open an account need help informingof signup issues,account_access,account_access
+assistance cancelling the subscription to ur newsletter,other,newsletter
+what do i have to do to download the bills from {{Person Name}},other,invoice_request
+I want help to see in what cases can I ask to be refunded,refund,refund_policy
+help me inform of a sign-up problem,account_access,account_access
+I have got to know if there are any news on my compensation,refund,refund_pending
+where is order {{Order Number}},delivery,track_order
+help to remove some products from order {{Order Number}},other,order_change
+I try to talk to customer assistance,other,human_request
+help me checking my bill from {{Person Name}},other,invoice_request
+i cannot locate order {{Order Number}},delivery,track_order
+can you help me check the status of my compensation?,refund,refund_pending
+tell me at what time I can call customer service,other,human_request
+help to see the status of my subscription to your newsletter,other,newsletter
+I don't know how to track purchase {{Order Number}},delivery,track_order
+can I delete an item from purchase {{Order Number}} ?,other,order_change
+there is an error setting up my shipping address,delivery,delivery_address
+where can I receive the corporate newsletter?,other,newsletter
+is it possible to see the payment modalities?,payment,payment_methods
+help me to check what delivery methods I can choose,delivery,delivery_options
+I don't know what to do to seak to a person,other,human_request
+remove item from order,other,order_change
+I want assistance to inform of an issue with a registration,account_access,account_access
+have problems with canceling order {{Order Number}},other,order_cancellation
+I need to see in what cases can I ask to be reimbursed,refund,refund_policy
+i need assistance notifying of a payment probelm,payment,payment_issue
+i do not know what i need to do to hsop several articles,other,product_information
+I don't know what I have to do to obtain a compensation,refund,refund_request
+I do not know how I can create a gold account,account_access,account_creation
+what do I need to do to see your payment methods?,payment,payment_methods
+help me creating a freemium account,account_access,account_creation
+"I am trying to find shipping periods, could you help me?",delivery,delivery_delay
+tell me more about modifying my shipping address,delivery,delivery_address
+I don't know hwat to do to earn several items,other,product_information
+assistance to file a customer claim,other,general_complaint
+The wireless printer will not connect to the website.,technical_support,technical_device_setup
+I need help seeing your money back guarantee,refund,refund_policy
+The checkout button is not working in my browser,technical_support,technical_website_error
+check status of refund,refund,refund_pending
+what do I have to do to make a complaint?,other,general_complaint
+setting different shipping address up,delivery,delivery_address
+how do I inform of a problem with online payments?,payment,payment_issue
+need help listing the allowed payment modalities,payment,payment_methods
+"I want to sign up to the newsletter, will you help me?",other,newsletter
+I do not know how to notify of a payment problem,payment,payment_issue
+changing to {{Account Type}} account,account_access,account_management
+I have got to see what delivery methods you offer,delivery,delivery_options
+I have to open a premium account,account_access,account_creation
+i try to create a damn {{Account Category}} account,account_access,account_creation
+I want help to see in which cases can I ask for refunds,refund,refund_policy
+help checking the current status of the restitution,refund,refund_pending
+I would loike to obtain damn refunds of my money,refund,refund_request
+how do I check when my package is going to arrive?,delivery,delivery_delay
+I can't swap an item of purchase {{Order Number}},other,order_change
+I am calling to see what shipment methods are there,delivery,delivery_options
+is it possibleto place an order from {{Delivery City}},delivery,delivery_options
+I am locked out after entering the wrong password,account_access,account_access
+I don't know how to track my reimbursement,refund,refund_pending
+wanna check when will my parcel arrive can i get some help,delivery,delivery_delay
+I need help to check what hours I can call customer service,other,human_request
+help me tracking order {{Order Number}},delivery,track_order
+"I need to talk with customer support, how todo it?",other,human_request
+I am trying to earn a product,other,product_information
+help me to cancel the subscription to the company newsletter,other,newsletter
+need help signing up to ur newsletter,other,newsletter
+The order page becomes unresponsive every time I view an order.,technical_support,technical_app_crash
+The order page page displays a loading error instead of my account.,technical_support,technical_website_error
+i have problems with canceling order {{Order Number}},other,order_cancellation
+"I cannot find the early termination fee, I need help",other,cancellation_fee
+ohw to cancel order {{Order Number}},other,order_cancellation
+where do I order an article?,other,product_information
+help me get the bill from {{Person Name}},other,invoice_request
+I do not know how I can obtain a rebate of money,refund,refund_request
+My Bluetooth headset stopped working after delivery.,technical_support,technical_product_malfunction
+wanna cange an item of order {{Order Number}} how could i do it,other,order_change
+ca ya help me set another fucking shipping address up,delivery,delivery_address
+I czn't find the early termination penalties,other,cancellation_fee
+I have to see in which cases can I request a refund,refund,refund_policy
+want assistance checking when  will my package arrive,delivery,delivery_delay
+edit details on pro account,account_access,account_management
+I need assistance sending some feedback for a product,other,product_information
+I want assistance to open a premium account,account_access,account_creation
+i want assistance to use th {{Account Type}} profile,account_access,account_management
+i want help to subscribe to the goddamn corporate newsletter,other,newsletter
+My account details were changed without my permission,account_access,account_access
+assistance with opening a standard account,account_access,account_creation
+see my blls from {{Person Name}},other,invoice_request
+help me retrieving the password of my user,account_access,account_access
+help to unsubscribe to your newslettert,other,newsletter
+help me list your available payment methods,payment,payment_methods
+i have got to check what shipment options are available,delivery,delivery_options
+how to send my feedback about ur company,other,product_information
+i do not know what to do to see the options for shipping,delivery,delivery_options
+I do not know how to cancel purchase {{Order Number}},other,order_cancellation
+how can I obtain my money back?,refund,refund_request
+Please fix the checkout error in the mobile app; I cannot finish my order.,technical_support,technical_checkout_error
+making customer complaint against your company,other,general_complaint
+assistance to report a problem with payments,payment,payment_issue
+i want support trying to change my delivery address,delivery,delivery_address
+assistance seeing in what situations can I request a refund,refund,refund_policy
+The web store keeps showing error code C102; can technical support investigate?,technical_support,technical_website_error
+how can I check the shipping methods?,delivery,delivery_options
+I see a broken page in the shopping app when I search for a product.,technical_support,technical_website_error
+I want help filing a reclamation,other,general_complaint
+what are the available methods for shipment?,delivery,delivery_options
+I want assistance to see what delivery methods I have,delivery,delivery_options
+open {{Account Type}} account,account_access,account_creation
+I want to see what options for delivery I can choose,delivery,delivery_options
+i dont know what i need to do to subscribe to ur newsletter,other,newsletter
+create premium account,account_access,account_creation
+help me to remove a product from purchase {{Order Number}},other,order_change
+what do I need to do to get my invoice #12588?,other,invoice_request
+help me speaking to somebody,other,human_request
+I am trying to set up a different shipping address,delivery,delivery_address
+I want assistance to see the early exit penalty,other,cancellation_fee
+i try to change some items of order {{Order Number}},other,order_change
+"I am looking for the shipping periods, how can I find them ?",delivery,delivery_delay
+want help seeing what delivery options are there,delivery,delivery_options
+I call to check the shipment options,delivery,delivery_options
+need helpsolving problems with online payment,payment,payment_issue
+need to locate the bill #12588 can uhelp me,other,invoice_request
+"my experience with you was too bad, help making a complaint",other,general_complaint
+want assistance to get the bills from {{Person Name}},other,invoice_request
+how long does it take for a damn article to arrive?,delivery,delivery_delay
+I want to cancel the {{Account Type}} account,account_access,account_management
+can i change some products of order {{Order Number}},other,order_change
+assistance receiving the company newsletter,other,newsletter
+How can I update my mailing address,other,general_complaint
+help me check the status of the rebate,refund,refund_pending
+where to ese how long the delivery takes,delivery,delivery_delay
+can I swap an itm of purchase {{Order Number}}?,other,order_change
+where can I get information about shipping periods ?,delivery,delivery_delay
+how to add an article to order {{Order Number}},other,order_change
+where do I download the invoices from {{Person Name}}?,other,invoice_request
+i have to report issues with online payment,payment,payment_issue
+need assistance getting restitutions of my money,refund,refund_request
+"I need to locate purchase {{Order Number}}, how do I do it?",delivery,track_order
+i want help leaving feedback,other,product_information
+i want help to change to the {{Account Category}} account,account_access,account_management
+I need help setting up my Bluetooth headset with the order page.,technical_support,technical_device_setup
+how do i see the damn status of order {{Order Number}},delivery,track_order
+can you show me what shipment options are available?,delivery,delivery_options
+Please help diagnose a malfunction with my security camera.,technical_support,technical_product_malfunction
+I don't know how to get a reimbursement of my money,refund,refund_request
+I'm waiting for a reimbursement of 1499dollars,refund,refund_pending
+tell me more abou editing my address,delivery,delivery_address
+help checking the status of the refund,refund,refund_pending
+where can i get information about editing the address,delivery,delivery_address
+I need to leave a comment for your company,other,product_information
+i want help getting the invoice #00108,other,invoice_request
+I am waiting for a compensation of {{Refund Amount}} dollars,refund,refund_pending
+i need assistance sending feedback for u company,other,product_information
+see in which situations can I request to be reimbursed,refund,refund_policy
+I do not know how I can make a customerr claim,other,general_complaint
+i need help with creating my platinum account,account_access,account_creation
+what do i need to do to inform of an error with a isgnup,account_access,account_access
+can you help me see what shipment methods you offer?,delivery,delivery_options
+where can I cancel purchase {{Order Number}}?,other,order_cancellation
+help to restore my profile password,account_access,account_access
+help notifying of an error with payment,payment,payment_issue
+I was billed an extra amount,payment,payment_issue
+how do i inform of payment provlems,payment,payment_issue
+how can I check the withdrawal penalty?,other,cancellation_fee
+"I have bought some items, cancel order {{Order Number}}",other,order_cancellation
+help checking the early exit charges,other,cancellation_fee
+informing of troubles with payment,payment,payment_issue
+"I have not registered yet, assistance to open a pro account",account_access,account_creation
+I'd like to modify the details on my user how can i do it,account_access,account_management
+I have to change some damn articles of purchase {{Order Number}},other,order_change
+i need help to file a complaint,other,general_complaint
+help checking in which situations can i ask to be erimbursed,refund,refund_policy
+I don't know what I need to do to contact a live agent,other,human_request
+I have got to see what methods for delivery are there,delivery,delivery_options
+I don't know what I have to do to see your money back policy,refund,refund_policy
+The web page is blank after I sign in,technical_support,technical_website_error
+i cant check my restitution current status,refund,refund_pending
+i do not kow what to do to check the allowed payment methods,payment,payment_methods
+need assistance checking how soon can I expect my orer,delivery,delivery_delay
+I have issues entering a new delivery address,delivery,delivery_address
+I need assistance checking how soon can I expect the package,delivery,delivery_delay
+where can I find information about an address update?,delivery,delivery_address
+I don't know what I need to do to check the shipment options,delivery,delivery_options
+I'm trying to see the eta of purchase {{Order Number}},delivery,track_order
+I cannot use the mobile app because it keeps crashing.,technical_support,technical_app_crash
+help seeing how soon can I expect the product,delivery,delivery_delay
+"I can't afford purchase {{Order Number}}, could you cancel it?",other,order_cancellation
+I want to file a reclamation against your company,other,general_complaint
+I need help opening a standard account,account_access,account_creation
+need assistance to create a premium account,account_access,account_creation
+I want assistance informing of issues with sign-up,account_access,account_access
+need to see when will my parcel arrive,delivery,delivery_delay
+I want to know about editing the shipping address,delivery,delivery_address
+can you help me filing a consumer reclamation?,other,general_complaint
+I need assistance with adding an item to order {{Order Number}},other,order_change
+I am trying to report errors with payments,payment,payment_issue
+create nbew {{Account Category}} account,account_access,account_creation
+can i open a standard account for my dad,account_access,account_creation
+I want information about correcting purchase {{Order Number}},other,order_change
+open premium account,account_access,account_creation
+help me file a reclamation against ur compay,other,general_complaint
+can I modify purchase {{Order Number}}?,other,order_change
+help me seeing in which cases can I request to be reimbursed,refund,refund_policy
+i do not know how i could obtaain compensations,refund,refund_request
+need assistance unsubscribing to your newsletter,other,newsletter
+how do I see what hours I can contact customer assistance?,other,human_request
+"I want to check the shipping options, I need help",delivery,delivery_options
+information about my forgotten PIN code,account_access,account_access
+can you help me to speak with customer assistance?,other,human_request
+i try to see the eta of order {{Order Number}},delivery,track_order
+I do not know how I can create a {{Account Type}} account for my daughter,account_access,account_creation
+where to see how soon can I expect the fucking article?,delivery,delivery_delay
+i have to see at what time i can contact customer service,other,human_request
+help me informof errors with online payment,payment,payment_issue
+i have paid {{Currency Symbol}}{{Refund Amount}} for an item help me obtain a refund,refund,refund_request
+i have got to see when will my parcel arrive can ya help me,delivery,delivery_delay
+is it possible to chck when will my purchase arrive,delivery,delivery_delay
+"I have got to see your money back policy, help me",refund,refund_policy
+i try to cancel order {{Order Number}},other,order_cancellation
+how can i see what shipment methods i have,delivery,delivery_options
+"I paid {{Currency Symbol}}{{Refund Amount}} for an item, I need a compensation",refund,refund_request
+"I have got to ask for a rebate, can you help me?",refund,refund_request
+help me cancel ordere {{Order Number}},other,order_cancellation
+what do i need to do to remove the {{Account Category}} account,account_access,account_management
+I cannot use the order page because it keeps crashing.,technical_support,technical_app_crash
+I call to check when my product is going to arrive,delivery,delivery_delay
+I expect a refund of {{Refund Amount}} dollars,refund,refund_pending
+I need to check if there are any news on my compensation,refund,refund_pending
+is it possible to inform of a problem with registrations?,account_access,account_access
+I can't swap some items of purchase {{Order Number}},other,order_change
+want help trying to edit my addres,delivery,delivery_address
+help me switch an item of order {{Order Number}},other,order_change
+tell me more about opening gold accounts,account_access,account_creation
+I don't know how I can see the ETA of purchase {{Order Number}},delivery,track_order
+want help cancelling my company newsletter subscriptikon,other,newsletter
+wantr help to solve issues with payment,payment,payment_issue
+update shipping address,delivery,delivery_address
+can i place a damn order from  {{Delivery Country}},delivery,delivery_options
+how do I enter the secondary shipping address?,delivery,delivery_address
+help knowing if there is anything new on the refund,refund,refund_pending
+help me receive the corporate newsletter,other,newsletter
+want help to see tthe damn ETA of order {{Order Number}},delivery,track_order
+"my new delivery address isn't valid, what should I do?",delivery,delivery_address
+I would like to get a compensation of my money,refund,refund_request
+i do not know how to look for the invoice #85632,other,invoice_request
+how can I track the compensation?,refund,refund_pending
+I do not know what to do to see the cancellation charges,other,cancellation_fee
+I need technical help because my new Bluetooth headset will not turn on.,technical_support,technical_product_malfunction
+I try to chat with an assistant,other,human_request
+I cannot sign in to the mobile app; it says an unexpected error.,technical_support,technical_login_error
+how to cancel my subscription to your company newsletter?,other,newsletter
+help me make a customer complaint against your business,other,general_complaint
+what do i hafe to do to check ur payment methods,payment,payment_methods
+I have a question about opening user profiles,account_access,account_access
+I can't find anything about the cancellation charge,other,cancellation_fee
+need assistance tonotify of a trouble with payments,payment,payment_issue
+I have got to give a quick look at bill #37777,other,invoice_request
+help me see the methods for shipment,delivery,delivery_options
+give me information about signing up to your newsletter,other,newsletter
+would it be possible to chat with somebody?,other,human_request
+i need assistance to locate purchase {{Order Number}},delivery,track_order
+remove some items fropm order {{Order Number}},other,order_change
+want assistance seeing the ETA of purchase {{Order Number}},delivery,track_order
+i cannot swap a product of order {{Order Number}},other,order_change
+The robot vacuum has a fault and I need troubleshooting steps.,technical_support,technical_product_malfunction
+cqn i swap several items of purchase {{Order Number}},other,order_change
+want help cancelling the corporate newsletter subscription,other,newsletter
+i need assistance with canceling order {{Order Number}},other,order_cancellation
+i have got to remove something from order {{Order Number}},other,order_change
+whhere to see the allowed payment modalities,payment,payment_methods
+getting invoices,other,invoice_request
+how do I sign up to the newsletter?,other,newsletter
+where could i submit a goddamn secondary delivery address,delivery,delivery_address
+I have got to elave feedback about your products,other,product_information
+help sending feedback for your company,other,product_information
+set my new shipping address up,delivery,delivery_address
+I have a question about opening a {{Account Type}} account,account_access,account_creation
+can you help me see the termination penalty?,other,cancellation_fee
+I have to see what shipping options I have,delivery,delivery_options
+i have to report issues with onlpine payment,payment,payment_issue
+Can a customer representative call me back,other,general_complaint
+I don't know how to unsubscribe from your newsletter,other,newsletter
+can ya help me receive ur company newsletter,other,newsletter
+need help notifying of a signup error,account_access,account_access
+i need help to file a consumer complaint,other,general_complaint
+I have a question about my {{Account Category}} account deletion,account_access,account_management
+I need help with cancellng order {{Order Number}},other,order_cancellation
+can you help me checking the methods for shipment?,delivery,delivery_options
+help me deleting an item from purchase {{Order Number}},other,order_change
+find bil #12588,other,invoice_request
+can I see the status of my restitution?,refund,refund_pending
+how can I reset my profile pass?,account_access,account_access
+I want help to see the payment methods,payment,payment_methods
+how to see what delivery options you offer?,delivery,delivery_options
+I have to see under what circumstances can I ask for refunds,refund,refund_policy
+I need help getting a rebate of my money,refund,refund_request
+I'm waiting for an goddamn restitution of {{Refund Amount}} dollars,refund,refund_pending
+I can't seed your refund policy,refund,refund_policy
+The security camera is defective and does not operate as described.,technical_support,technical_product_malfunction
+I do not know what I have to do to cal customer service,other,human_request
+i dont know  how i can see the cancellation penalty,other,cancellation_fee
+updating information on platinum account,account_access,account_management
+how to talk with an agent?,other,human_request
+could you help me check your money back guarantee?,refund,refund_policy
+how could I add some damn products to order {{Order Number}}?,other,order_change
+Setup for the wireless printer fails with error code E500.,technical_support,technical_device_setup
+I do not know what to do to create a {{Account Type}} account for my dad,account_access,account_creation
+Buttons on the shopping app do nothing when I click them.,technical_support,technical_website_error
+I want assistance checking the early termination fees,other,cancellation_fee
+assistance filing a customer complaint against ur company,other,general_complaint
+I need assistance to check when will my package arrive,delivery,delivery_delay
+I need assistance demanding compensations,refund,refund_request
+where could I open a premium account for my fiance?,account_access,account_creation
+i have got to check when my shipment is gonna arrive,delivery,delivery_delay
+what do I need to do to switch to the {{Account Category}} account?,account_access,account_management
+how do I check the options for shipment?,delivery,delivery_options
+i dont know what i have to do to check my invoice #37777,other,invoice_request
+i try to check what shipment methods are there,delivery,delivery_options
+i do not know what i need to do to cancel the gold account,account_access,account_management
+take a quick look at my invoices from {{Person Name}},other,invoice_request
+need help changing some articles  of order {{Order Number}},other,order_change
+I need assistance to solve a problem with payment,payment,payment_issue
+find information about the removal of a gold account,account_access,account_management
+can you help me to find the bill #37777?,other,invoice_request
+is it possible to check the withdrawal charges,other,cancellation_fee
+help me retrieve my user account PIN,account_access,account_access
+want help to cancel order {{Order Number}},other,order_cancellation
+i dont know what i need to do to see the withdrawal fee,other,cancellation_fee
+i have to speak to an human agent,other,human_request
+can ya help me to solve probelms with payment,payment,payment_issue
+I need help with canceling purchase {{Order Number}},other,order_cancellation
+I do not know what to do to check the early exit fee,other,cancellation_fee
+how do I receive your newsletter?,other,newsletter
+i do not know what i need to do to remove my {{Account Category}} account,account_access,account_management
+I need help seeing the termination fees,other,cancellation_fee
+report issues with registration,account_access,account_access
+notifyof issues with online payment,payment,payment_issue
+I want help to cancel the company newsletter subscription,other,newsletter
+I want to receive a reimbursement of my money,refund,refund_request
+create new freemium account,account_access,account_creation
+i want help leaving feedback about a service,other,product_information
+Login is not working on the customer portal; please help me regain access.,technical_support,technical_login_error
+want support  editing my shipping address,delivery,delivery_address
+changing info on pro account,account_access,account_management
+i cannot see if there is anything new on my refund,refund,refund_pending
+what do I have to do to change my shipping address?,delivery,delivery_address
+there is a trouble setting a secondary shipping address up,delivery,delivery_address
+can you help me checking the ETA of the order {{Order Number}} ?,delivery,track_order
+where can I report problems with payments?,payment,payment_issue
+modify info on platinum account,account_access,account_management
+i need help seeing purchase {{Order Number}} status,delivery,track_order
+i do not know how i can downloaad the bill #12588,other,invoice_request
+help me acquiring a few of your article,other,product_information
+I have to see whay hours I can call customer support,other,human_request
+can you show me the withdrawal charge?,other,cancellation_fee
+I cannot retrieve my user account PIN code,account_access,account_access
+problem with swappingt some articles of purchase {{Order Number}},other,order_change
+i have got to correct the info included on my user profile,account_access,account_management
+i need help to delete something from order {{Order Number}},other,order_change
+i do not know what to do to open a pro account for my fiance,account_access,account_creation
+"I need to check my bill #12588, could you help me?",other,invoice_request
+get invoice from November,other,invoice_request
+can i see the available payment methods,payment,payment_methods
+want help to obtain a compensation of money,refund,refund_request
+I want help talking with a person,other,human_request
+i have lost  my pwd could i reset it,account_access,account_access
+i do not know how i can see the ETA of purcyase {{Order Number}},delivery,track_order
+can i check what payment options ya accept,payment,payment_methods
+cancel purchase {{Order Number}},other,order_cancellation
+I do not recognize this charge on my card,payment,payment_issue
+can you tell me your damn payment methods?,payment,payment_methods
+help to see thje ETA of purchase {{Order Number}},delivery,track_order
+can I check the shipment options?,delivery,delivery_options
+I want to remove an old device from my account,account_access,account_access
+help me lodge a consumer claim against ur company,other,general_complaint
+I cannotcancel my subscription to your corporate newsletter,other,newsletter
+I need help setting up my robot vacuum with the shopping app.,technical_support,technical_device_setup
+where could I inform of issues with payment?,payment,payment_issue
+help me to check when my purchase is going to arrive,delivery,delivery_delay
+can uhelp me canceling order {{Order Number}},other,order_cancellation
+how can I order several goddamn articles?,other,product_information
+can you help me to check what payment options you accept?,payment,payment_methods
+I do not know how I can download my invoice #37777,other,invoice_request
+where can I file a customer claim against your business?,other,general_complaint
+I need help signing up to the newsletter,other,newsletter
+I am waiting for a rebate fo {{Refund Amount}} dollars,refund,refund_pending
+I do not know how to report a signup error,account_access,account_access
+help seeing in what situations can i request reimbursements,refund,refund_policy
+i want helpunsubscribing to the corporate newsletter,other,newsletter
+I can't add an item to order {{Order Number}},other,order_change
+need assistance to sign up to the newsletter,other,newsletter
+need to make a consumere claim,other,general_complaint
+new {{Account Category}} acount,account_access,account_creation
+where to create a {{Account Category}} account for my daughter?,account_access,account_creation
+I do not know what I need to do to get the bill #00108,other,invoice_request
+where can I see how long the shipment takes?,delivery,delivery_delay
+I need to see how soon can I expect my purchase,delivery,delivery_delay
+need to lodge a reclamation,other,general_complaint
+how to lodge a complaint against your organization?,other,general_complaint
+I can't sign up to the company newsletter,other,newsletter
+i have to see when will my article arrive,delivery,delivery_delay
+i cannot rettrieve my damn user pass,account_access,account_access
+want assistance to check the cancellation charge,other,cancellation_fee
+help lodging a claim against ur business,other,general_complaint
+do you have an address to send a review?,other,product_information
+I have to see in what situations can I ask to be reimbursed,refund,refund_policy
+I havd problems with a shipping address update,delivery,delivery_address
+add product to purchase {{Order Number}},other,order_change
+help me check in what cases can i ask for a refund,refund,refund_policy
+My mobile app closes unexpectedly after the latest update.,technical_support,technical_app_crash
+can ya help me cancel purchase {{Order Number}},other,order_cancellation
+i want assistance to check the invoices from {{Person Name}},other,invoice_request
+i want help requesting a reimbursement of moey,refund,refund_request
+how do I modify purchase {{Order Number}}?,other,order_change
+i try to check the termination epnalties,other,cancellation_fee
+I would like to track the restitution,refund,refund_pending
+I want to report a problem with online payments,payment,payment_issue
+assistance to see your accepted payment methods,payment,payment_methods
+i want help getting my bills from {{Person Name}},other,invoice_request
+"I bought some articles, help me to cancel order {{Order Number}}",other,order_cancellation
+"the experience with you has been bad, make a reclamation",other,general_complaint
+I am trying to see the early exit penalties,other,cancellation_fee
+how do i check  when will my parcel arrive,delivery,delivery_delay
+see in which situations can I ask to be refunded,refund,refund_policy
+can you help me to receive a refund?,refund,refund_request
+"I have got to list the damn payment methods, how to do it?",payment,payment_methods
+lodging consumer claim against your company,other,general_complaint
+i dont know what i have to do to speak to an assistant,other,human_request
+I want assisrance to open a {{Account Category}} account,account_access,account_creation
+i do not know how to receive a compensatin,refund,refund_request
+help me usew the freemium account,account_access,account_management
+i need assistance canceling the newsletter subscription,other,newsletter
+I need assistance to modify purchase {{Order Number}},other,order_change
+need help with cancelling purchase {{Order Number}},other,order_cancellation
+i need help to make a customer claim against u organization,other,general_complaint
+removing gold acconut,account_access,account_management
+can you give me information about a pro account termination?,account_access,account_management
+I need help to talk to an assistant,other,human_request
+I am looking for information about opening a {{Account Type}} account,account_access,account_creation
+My wireless printer is not recognised by the website.,technical_support,technical_device_setup
+I don't know what I have to do to demad my money back,refund,refund_request
+"I want to modify order {{Order Number}}, how to do it?",other,order_change
+how to inform of a problem with online payments?,payment,payment_issue
+notify of problem with signup,account_access,account_access
+need to see what hours i can reach customer support,other,human_request
+i need help with cancelling order {{Order Number}},other,order_cancellation
+can you help me retrieve my user PIN code?,account_access,account_access
+hwat do I have to do to see the early termination charges?,other,cancellation_fee
+can you help me talking with an  operator?,other,human_request
+i do not know what i have to do to earn some items,other,product_information
+i want help to check wht hours i can reach customer service,other,human_request
+rebate {{Refund Amount}} dollarx,refund,refund_request
+where can i see the ETA of purchase {{Order Number}},delivery,track_order
+I'm trying to check ur accepted payment otions,payment,payment_methods
+want help to shop a few of ur article,other,product_information
+help me to check how soon can I expect my article,delivery,delivery_delay
+how can I see what options for delivery I can choose?,delivery,delivery_options
+what d I have to do to notify of an issue with a signup?,account_access,account_access
+The customer portal is not loading correctly in my browser.,technical_support,technical_website_error
+"I want to see what shipping options I have, how to do it?",delivery,delivery_options
+where do I know if there is anything wrong with the refund?,refund,refund_pending
+I want help entering a secondary shipping address,delivery,delivery_address
+what are the fees for canceling the contract?,other,cancellation_fee
+how can i see the status of purchase {{Order Number}},delivery,track_order
+I cannot cancel the subscription to the corporate newsletter,other,newsletter
+could i recover  my damn profile key,account_access,account_access
+I don't know how to make a consumer reclamation,other,general_complaint
+allowed payment methods,payment,payment_methods
+when am i gonna get a reimbursement,refund,refund_request
+i dont know how to see what methods for delivery i have,delivery,delivery_options
+need help to see at what time I can contact customer service,other,human_request
+I'm trying to see my refund current status,refund,refund_pending
+can I see in what cases can I ask for reimbursements?,refund,refund_policy
+I want supports trying to edit the delivery address,delivery,delivery_address
+I have to report issues with payments,payment,payment_issue
+how to open a standard account for my dad?,account_access,account_creation
+i need help cancelling puchase {{Order Number}},other,order_cancellation
+what do i need to do to create a gold account,account_access,account_creation
+reimburse {{Refund Amount}} dollars,refund,refund_request
+I call to see when my package is going to arrive,delivery,delivery_delay
+I am trying to check in which cases can I request a refund,refund,refund_policy
+can uhelp me to contact customer service,other,human_request
+help seeing the fucking cancellation charges,other,cancellation_fee
+how do i create a freemium account,account_access,account_creation
+can you help me leave an opinion foor a product?,other,product_information
+i do not know what i need to do to download the bioll #12588,other,invoice_request
+I do not know how I can see the early termination penalty,other,cancellation_fee
+I need the shipping options for a new purchase,delivery,delivery_delay
+where do I change my shipping address?,delivery,delivery_address
+i dontg know what i have to do to look for bill #00108,other,invoice_request
+canceling order {{Order Number}},other,order_cancellation
+modify details on premium account,account_access,account_management
+can I see in what situations can I request to be reimbursed?,refund,refund_policy
+I have got to check the status of my newsletter subscription,other,newsletter
+cancel purchase113542617735902,other,order_cancellation
+help adding some items to purchase {{Order Number}},other,order_change
+want help to use the {{Account Type}} account,account_access,account_management
+i dont know what i need to do to delete the standard account,account_access,account_management
+need assistance to see my invoices from {{Person Name}},other,invoice_request
+I don't know how to get refunds,refund,refund_request
+another {{Account Type}} account for father,account_access,account_creation
+I want help to list the allowed payment options,payment,payment_methods
+I get a server error when I try to check out on the shopping app.,technical_support,technical_checkout_error
+help lodging a consumer claim,other,general_complaint
+"I am looking for the shipping period, where can I find it?",delivery,delivery_delay
+i need assistance to inform of signup issues,account_access,account_access
+I need to make a complaint,other,general_complaint
+i want help to check the early exit penalties,other,cancellation_fee
+where can i change to the gold account,account_access,account_management
+help to obtain a compensation of my money,refund,refund_request
+what are ur available payment methods,payment,payment_methods
+help me demand a compensation of money,refund,refund_request
+help to see when my purchase is going to arrive,delivery,delivery_delay
+I need assistance to talk to an operator,other,human_request
+i have paid {{Currency Symbol}}{{Refund Amount}} for thid item i try to receive a rebate,refund,refund_request
+"I want to see the goddamn shipment methods, how to do it?",delivery,delivery_options
+I want help to check what shipping methods you offer,delivery,delivery_options
+I want assistance checking the available payment options,payment,payment_methods
+can I see order {{Order Number}} status?,delivery,track_order
+I want to check the withdeawal charges,other,cancellation_fee
+modify information on premium account,account_access,account_management
+could you help me see if there are any news on my rebate?,refund,refund_pending
+could you show me inwhat cases can I ask for refunds?,refund,refund_policy
+I have problems with the key reset,account_access,account_access
+"I ain't happy with your service, I want help filing a claim",other,general_complaint
+Login is not working on the order page; please help me regain access.,technical_support,technical_login_error
+i dont know how i can delete a premium account,account_access,account_management
+checking invoice #37777,other,invoice_request
+can ya direct to me an assistant,other,human_request
+reporting  troubles with online payment,payment,payment_issue
+"I have got to check the methods for shipment, I need help",delivery,delivery_options
+need to reset the pin of my profile,account_access,account_access
+need assistance to check in what cases can I request refunds,refund,refund_policy
+anything new on the refund,refund,refund_pending
+help me seeing in what cases can I request a reimbursement,refund,refund_policy
+I don't know how I can contact customer assistance,other,human_request
+I don't know what to do to sign up to the newsletter,other,newsletter
+I'm waiting for a reimbursement of {{Currency Symbol}}{{Refund Amount}},refund,refund_pending
+I  need to retrieve my user account PIN code,account_access,account_access
+can you help me seeing the early exit penalties?,other,cancellation_fee
+could you help me seeing when my parcel is going to arrive?,delivery,delivery_delay
+assistance demanding a compensation of my money,refund,refund_request
+where can I list your accepted payment modalities?,payment,payment_methods
+help to place an order,other,product_information
+assistance demanding restitutions of money,refund,refund_request
+wanna see the withdrawalcharge,other,cancellation_fee
+assistance seeing how soon can I expect my article,delivery,delivery_delay
+I need help setting up my security camera with the web store.,technical_support,technical_device_setup
+need help canceling purchase {{Order Number}},other,order_cancellation
+I need help to acquire a product,other,product_information
+"I am experiencing a problem signing up, can I get some help?",account_access,account_access
+need help deleting my {{Account Category}} account,account_access,account_management
+I want help to check what damn delivery methods I can choose,delivery,delivery_options
+I don't know how to check when will my purchase arrive,delivery,delivery_delay
+"I cannot pay, help me to inform of a problem with payments",payment,payment_issue
+"I have to check purchase {{Order Number}} status, I need help",delivery,track_order
+how much would you charge me if I cancelled the contract?,other,cancellation_fee
+I try to switch to the {{Account Category}} account,account_access,account_management
+I don't know how I can get a compensation of my money,refund,refund_request
+i cannot change several items of order {{Order Number}},other,order_change
+want assistance checking the cancellation fees,other,cancellation_fee
+checking the available methods for shipment,delivery,delivery_options
+I exxpect a rebate of {{Currency Symbol}}{{Refund Amount}},refund,refund_pending
+is there an address to send feedback for ur products,other,product_information
+"I need to leave a comment for your services, how to do it?",other,product_information
+can you help me seeing the accetped payment methods?,payment,payment_methods
+could you help me  informing of an issue with payments?,payment,payment_issue
+I want to know about receiving your company newsletter,other,newsletter
+I don't know how I can locate purchase {{Order Number}},delivery,track_order
+what do I need to do to restore my user account access key ?,account_access,account_access
+The shopping app becomes unresponsive every time I view an order.,technical_support,technical_app_crash
+see the early exit penalties,other,cancellation_fee
+I cannot place my order because checkout freezes on the shopping app.,technical_support,technical_checkout_error
+I do not know what to do to see the early exit penalty,other,cancellation_fee
+I changed phones and cannot log in,account_access,account_access
+"I want to receive the company newsletter, how could I do it?",other,newsletter
+where to notify of a sign-up problem?,account_access,account_access
+I can't check purchase {{Order Number}} status,delivery,track_order
+could ya help mw check ur reimbursement policy,refund,refund_policy
+can you tell me about my newsletter subscription?,other,newsletter
+I don't know what I have to do to list the payment methods,payment,payment_methods
+look for bill from {{Person Name}},other,invoice_request
+help me check how soon can I expect the fucking purchase,delivery,delivery_delay
+is there an address to leave an opinion ?,other,product_information
+can you help me to notify of a trouble with payment?,payment,payment_issue
+I have an issue setting the delivery address up,delivery,delivery_address
+help me report an issue with registrations,account_access,account_access
+I expect a rebate of {{Refund Amount}} dollars,refund,refund_pending
+help me see what hours I can reach customer support,other,human_request
+i dont know how i can check the eta of my last delivery,delivery,track_order
+I try to make a complaint,other,general_complaint
+I want support trying to edit my shipping address,delivery,delivery_address
+I need sasistance recovering the PIN of my profile,account_access,account_access
+I want help to see the ETA of the purchase {{Order Number}},delivery,track_order
+help me to lodge a reclamation against your company,other,general_complaint
+I don't know what I have to do to look for invoice #00108,other,invoice_request
+i dont know how to check the ETA of purchase {{Order Number}},delivery,track_order
+I want help to demand a compensation,refund,refund_request
+wanna see  the payment methods help me,payment,payment_methods
+I want assistance to write a review,other,product_information
+I want assistance to check the early exit penalties,other,cancellation_fee
+want help to get my money back,refund,refund_request
+I'd like to obtain an reimbursement of money,refund,refund_request
+I try to unsubscribe to your company newsletter,other,newsletter
+how could i check the ETA of the order {{Order Number}},delivery,track_order
+could you show me in what situations can I ask for refunds?,refund,refund_policy
+can  uhelp me canceling order {{Order Number}},other,order_cancellation
+I try to see the current status of purchase {{Order Number}},delivery,track_order
+i dont know how to notify of troublse with payments,payment,payment_issue
+show me the withdrawal penalties,other,cancellation_fee
+can you help me seeing your available payment options?,payment,payment_methods
+is it possible to see the early exit fees?,other,cancellation_fee
+I have to see your allowed payment methods,payment,payment_methods
+can uhelp me requesting rebates,refund,refund_request
+need assistance to see the eta of purcase {{Order Number}},delivery,track_order
+what do I have to do to close the {{Account Type}} account?,account_access,account_management
+i have a problem entering a secondary shipping address,delivery,delivery_address
+I need assistance to see the allowed payment options,payment,payment_methods
+i want help to use the {{Account Category}} profile,account_access,account_management
+can yahelp me contacting customer support,other,human_request
+I do not know how I can speak to an agent,other,human_request
+help to leave damn feedback for ru products,other,product_information
+I have a question about canceling order {{Order Number}},other,order_cancellation
+showing reimbursement status,refund,refund_pending
+I don't know how to inform of troubles with online payments,payment,payment_issue
+i need assistznce to cancel my {{Account Category}} account,account_access,account_management
+I want to know more about opening {{Account Category}} accounts,account_access,account_creation
+assistance checking the early exit penalties,other,cancellation_fee
+I don't know what to do to speak with an operator,other,human_request
+The shopping app is not loading correctly in my browser.,technical_support,technical_website_error
+need assistance modifying theshipping address,delivery,delivery_address
+notify of issues wiht payment,payment,payment_issue
+The checkout page will not complete my order in the order page.,technical_support,technical_checkout_error
+can you show me the current status of my refund?,refund,refund_pending
+I try to inform of errors with a signup,account_access,account_access
+show me under whcih circumstances can i ask to be refunded,refund,refund_policy
+i need assiustance reporting an issue with a registration,account_access,account_access
+i want assistance getting the bill #37777,other,invoice_request
+I'm trying to notify of errors with online payments,payment,payment_issue
+need help checking how soon can I expect my item,delivery,delivery_delay
+what do I need to do to see what delivery options you offer?,delivery,delivery_options
+"I would like to do a purchase, can you help me?",other,product_information
+I need assistance with cancelling order {{Order Number}},other,order_cancellation
+swap an item of purchase {{Order Number}},other,order_change
+i have got to leave my feedback can i get some help,other,product_information
+want assistance to send my feedback about a product,other,product_information
+I want help seeing how soonj can I expect my parcel,delivery,delivery_delay
+help me to change several products of purchase {{Order Number}},other,order_change
+do you deliver to {{Delivery City}}?,delivery,delivery_options
+I would like to speak to a live agent,other,human_request
+where doi see the withdrawal penalties,other,cancellation_fee
+what do I need to do to request a fucking refund?,refund,refund_request
+i dont knnow how to notify of an error with online payment,payment,payment_issue
+"I paid {{Currency Symbol}}{{Refund Amount}} for this item, want help to get a rebate",refund,refund_request
+i need help with cancelliung order {{Order Number}},other,order_cancellation
+The screen freezes during setup,technical_support,technical_website_error
+i want assistance to find the bikll #00108,other,invoice_request
+want assistance to see your payment modalities,payment,payment_methods
+changing info on standard account,account_access,account_management
+can you help me change to the standard account?,account_access,account_management
+I cannot see purchase {{Order Number}} goddamn current status,delivery,track_order
+The fitness tracker has a fault and I need troubleshooting steps.,technical_support,technical_product_malfunction
+I try to check your damn money back guarantee,refund,refund_policy
+Money was deducted but my order did not go through,payment,payment_issue
+"I am unhappy with your work, I want to file a consumer claim",other,general_complaint
+I need to see my invoices from {{Person Name}},other,invoice_request
+help me checking what shipment methods I have,delivery,delivery_options
+can ya help me seeing the bloody early exit fee,other,cancellation_fee
+would it be possible to delete a {{Account Type}} account?,account_access,account_management
+help me obtain a reimbursement,refund,refund_request
+I  have to edit order {{Order Number}},other,order_change
+update details on pro account,account_access,account_management
+I need assistance locating order {{Order Number}},delivery,track_order
+I cannot submit a secondary delivery address,delivery,delivery_address
+i cannotedit purchase {{Order Number}},other,order_change
+help checking how soon can I expect the shipment,delivery,delivery_delay
+i want assiatance seeing how soon can i expect the delivery,delivery,delivery_delay
+I cannot contact a human agent,other,human_request
+need to switch to the pro account help me,account_access,account_management
+i cannot find the cancellation fees,other,cancellation_fee
+wanna enter my shipping address,delivery,delivery_address
+how to see what hours I can call customer service?,other,human_request
+"I want to see how soon can I expect my parcel, how to do it?",delivery,delivery_delay
+help me check what hours I can reach customer assistance,other,human_request
+where do I see if there are any updates on the refund?,refund,refund_pending
+can I see if there is anything new on the refund?,refund,refund_pending
+The web store becomes unresponsive every time I view an order.,technical_support,technical_app_crash
+showing refund status,refund,refund_pending
+"I paid {{Refund Amount}} dollars for an article, I try to obtain a rebate",refund,refund_request
+can I change to the {{Account Type}} account?,account_access,account_management
+want assistance informing of problems with online payment,payment,payment_issue
+can you help me talk with customer assistance?,other,human_request
+I'm waiting for a refund of {{Refund Amount}} dollrs,refund,refund_pending
+can you help me to see the compensation current status?,refund,refund_pending
+what do I have to do to see your payment methods?,payment,payment_methods
+Checkout is broken and will not accept my selection on the order page.,technical_support,technical_checkout_error
+tell me more about updating the address,delivery,delivery_address
+I am trying to inform of a payment error,payment,payment_issue
+The website shows error code E500 after I press place order.,technical_support,technical_checkout_error
+help checking in which cases can I request a fucking refund,refund,refund_policy
+show me in which cases can I request a refund,refund,refund_policy
+I cannot complete device setup for the smart speaker.,technical_support,technical_device_setup
+I need help to modify order {{Order Number}},other,order_change
+i try to see how long reimbursements take,refund,refund_policy
+could I know if there are any updates on my rebate?,refund,refund_pending
+need to file an fucking consumer claim can i get some help,other,general_complaint
+I do not know what to do to see the status of ordrr {{Order Number}},delivery,track_order
+I can't sign up to your goddamn company newsletter,other,newsletter
+My package arrived damaged after shipping,delivery,delivery_delay
+check in what situations can I ask for reimbursements,refund,refund_policy
+i need help calling customer service,other,human_request
+I don't know what I have to do to sign up to the newsletter,other,newsletter
+i dont know what i need to do to cancel my standard account,account_access,account_management
+I don't know how I can see the available payment modalities,payment,payment_methods
+I have a problem updating the delivery address,delivery,delivery_address
+Something is wrong with the smart speaker; it fails during normal use.,technical_support,technical_product_malfunction
+can I add several articles to order {{Order Number}}?,other,order_change
+My credit card was declined even though it has enough balance,payment,payment_issue
+could i file a revlamation against ur organization,other,general_complaint
+I am trying to see the ET of the order {{Order Number}},delivery,track_order
+help seeing under which circumstances can i request a refund,refund,refund_policy
+i have a problem changing my delivery address,delivery,delivery_address
+i do not know what i need to do to get refunds of money,refund,refund_request
+i cant pay i have to notify of problems with online payment,payment,payment_issue
+need help to see what shipping methods are there,delivery,delivery_options
+need to report a troubled with payments,payment,payment_issue
+"you aren't helpful at all, how could I contact someone?",other,human_request
+wanna ask for a compensatin of money,refund,refund_request
+want help to list ru payment modalities,payment,payment_methods
+what do I need to do to make a goddamn complaint?,other,general_complaint
+help me to see when my shipment is going to arrive,delivery,delivery_delay
+ordr several of ur product,other,product_information
+I'd like to add a prdouct to purchase {{Order Number}} will uhelp me,other,order_change
+need help removing several items from order {{Order Number}},other,order_change
+how to see when my package is going to arrive?,delivery,delivery_delay
+help me to file a custoer complaint against ur company,other,general_complaint
+help me file a consumer complaint against ur company,other,general_complaint
+want assistgance to submit the secondary shipping address,delivery,delivery_address
+need help to check  the ETA of the order {{Order Number}},delivery,track_order
+help me to see in what cases can i ask for my money back,refund,refund_policy
+need to download the bills from {{Person Name}},other,invoice_request
+how do i make a consumer reclamation against ur business,other,general_complaint
+need to unsubscribe from the newsletter,other,newsletter
+I do not know what I have to do to notify of payment issues,payment,payment_issue
+I want to see the fucking ETA of the order {{Order Number}},delivery,track_order
+I try to know if there is anything new on my compensation,refund,refund_pending
+The customer portal will not let me log in after I enter my email.,technical_support,technical_login_error
+Opening the order page causes a crash on my device.,technical_support,technical_app_crash
+i have got to add something to oprder {{Order Number}},other,order_change
+i want help requesting refunds,refund,refund_request
+i have to check the ETA or order {{Order Number}} help me,delivery,track_order
+where to report probles with online payment,payment,payment_issue
+"I need to see your damn money back policy, how do I do it?",refund,refund_policy
+i need help with cancelling purchase {{Order Number}},other,order_cancellation
+i do not kno what to do to locate purchase {{Order Number}},delivery,track_order
+i dont want order {{Order Number}} could i cancel it,other,order_cancellation
+can uhelp me see if there are any news on my refund,refund,refund_pending
+need to create a standard account,account_access,account_creation
+I want information about a delivery address correction,delivery,delivery_address
+need asistance seeing your bloody available payment methods,payment,payment_methods
+I need help seeing the termination charges,other,cancellation_fee
+tell me about subscribing to your newsletter,other,newsletter
+I do not know how to reset my goddamn user account PIN code,account_access,account_access
+"I purchased some damn product, help me cancel order {{Order Number}}",other,order_cancellation
+how to see the termination penalty,other,cancellation_fee
+I'm trying to report issues with online payment,payment,payment_issue
+The return was accepted but the money is still pending,refund,refund_request
+want assistance demanding compensations fo money,refund,refund_request
+need help to check order {{Order Number}} current status,delivery,track_order
+help seeing the ETA of order {{Order Number}},delivery,track_order
+can you help me to list the payment modalities?,payment,payment_methods
+i have a problem with opening a {{Account Type}} account,account_access,account_creation
+i try to cancel purchase {{Order Number}},other,order_cancellation
+"the new delivery address is invalid, what should I do?",delivery,delivery_address
+is there a section to submit some feedback for your conpany?,other,product_information
+need help with canceling purchase {{Order Number}},other,order_cancellation
+i want assistance to list the allowed payment modalitiess,payment,payment_methods
+help locating my bill from {{Person Name}},other,invoice_request
+can you help me canceling order {{Order Number}}?,other,order_cancellation
+i dont know what to do to obtain my money back,refund,refund_request
+i have an issue submitting the new delivery address,delivery,delivery_address
+could you help me file a reclamation ?,other,general_complaint
+I expect an rebate of {{Refund Amount}} dollars,refund,refund_pending
+help me check at what time i can contact cuswtomer support,other,human_request
+what do i need to do to earn several of urarticle,other,product_information
+need to check ur money back ugarantee,refund,refund_policy
+help to set up a delivery address,delivery,delivery_address
+"I cannot open an account, help to inform of signup issues",account_access,account_access
+can you help me place an order?,other,product_information
+help me inform of a problem with payment,payment,payment_issue
+I would like to ask for compensations,refund,refund_request
+need to swap several items of purchase {{Order Number}},other,order_change
+"I have got to order a few of your item, how do I do it?",other,product_information
+were can i cancel purchase {{Order Number}},other,order_cancellation
+how do I list the accepted payment options?,payment,payment_methods
+what do I need to do to notify of a problem with payments?,payment,payment_issue
+i want information about creating freemium accounts,account_access,account_creation
+can you help me check the compensation current status?,refund,refund_pending
+show me your allowed payment options,payment,payment_methods
+I want help to cancle purchase {{Order Number}},other,order_cancellation
+help to speak with aj assistant,other,human_request
+sign up to your company newsletter,other,newsletter
+I need assistance to reset the pass of my profile,account_access,account_access
+help me retrieve the fucking PIN code of my account,account_access,account_access
+how to shop some items?,other,product_information
+assistance seeing your money back policy,refund,refund_policy
+"the address changed, I need assistace editing it",delivery,delivery_address
+"I would like to close my gold account, help me",account_access,account_management
+assistance restoring the goddamn PIN code of my user account,account_access,account_access
+I want help to ask for a reimbursement of my money,refund,refund_request
+wanna know more about updating my delivery address,delivery,delivery_address
+what do i need to do to get my bill from {{Person Name}},other,invoice_request
+need help ordering some products,other,product_information
+I have to lodge a consumer complaint against your company,other,general_complaint
+I need help to check when my package is going to arrive,delivery,delivery_delay
+I don't know what I have to do to chat with an assistant,other,human_request
+where can I notify of troubles with payment?,payment,payment_issue
+need to make an customer claim against ur business,other,general_complaint
+can uhelp me swap an item of order {{Order Number}},other,order_change
+i want assistance canceling the newslettersubscription,other,newsletter
+"I want to delete a {{Account Type}} account, help me",account_access,account_management
+I do not know how I can open a premium account,account_access,account_creation
+i need assistance giving a quick look at the bvill #37777,other,invoice_request
+can you help me to solve an issue with payment?,payment,payment_issue
+I need assistance to switch to the {{Account Type}} account,account_access,account_management
+where do i check the current status of purchase {{Order Number}},delivery,track_order
+help to sign up to your company newsleyter,other,newsletter
+want help to see ur reimbursement policy,refund,refund_policy
+how do i check order {{Order Number}} current status,delivery,track_order
+opening new {{Account Category}} account for daughter,account_access,account_creation
+I am trying to check my rebate status,refund,refund_pending
+I want assistance to notify of issues with sign-up,account_access,account_access
+"I can't find the cancellation fees, will you help me?",other,cancellation_fee
+need assistance reporting errors with a registration,account_access,account_access
+"I need to receive your company newsletter, how can I do it?",other,newsletter
+how can i make a consumer complaint against ur company,other,general_complaint
+what do I need to do to check the cancellation charge?,other,cancellation_fee
+how do I purchase several of your product ?,other,product_information
+"my delivery address changed, can you help me editing it?",delivery,delivery_address
+"I expect a fucking ocmpensation of {{Currency Symbol}}{{Refund Amount}}, was it processed",refund,refund_pending
+what do I need to do to create a {{Account Type}} account?,account_access,account_creation
+I have to check in what cases can I request a refund,refund,refund_policy
+I call to see the shipping methods,delivery,delivery_options
+I needassistance sending some feedback about your company,other,product_information
+I want to see what payment options you accept,payment,payment_methods
+i want assistance checking the available payment options,payment,payment_methods
+need to check how soon can i ezpect my package,delivery,delivery_delay
+"I have to list your payment modalities, how do I do it?",payment,payment_methods
+how do I see when will my product arrive?,delivery,delivery_delay
+i have to list the available  payment options,payment,payment_methods
+"I lost the bills from {{Person Name}}, will you show them to me?",other,invoice_request
+i dont know what i have to do to get my bill #85632,other,invoice_request
+i want help to check when wqill my package arrive,delivery,delivery_delay
+i xepect a refund of {{Currency Symbol}}{{Refund Amount}},refund,refund_pending
+I need to see under what circumstances can I ask for refunds,refund,refund_policy
+how can I see how long the shipping takes?,delivery,delivery_delay
+i chose a wrong address by mistake colud ya modify it,delivery,delivery_address
+can you help me checking the cancellation charge?,other,cancellation_fee
+help with cancelling order {{Order Number}},other,order_cancellation
+how do I check the accepted payment methods?,payment,payment_methods
+ya are not helpful could i speak with a fucking human agent,other,human_request
+how to list the allowed payment modalities?,payment,payment_methods
+what do i need to do to get my invoices from {{Person Name}},other,invoice_request
+I'm waiting for a restitution oof {{Currency Symbol}}{{Refund Amount}},refund,refund_pending
+I want help leaving a comment for a service,other,product_information
+delete gold acvount,account_access,account_management
+"I have got to cancel purchase {{Order Number}}, how do I do it?",other,order_cancellation
+I need assistance to file a claim against your business,other,general_complaint
+assistance to recover my acconut key,account_access,account_access
+A technical error prevents me from using the customer portal.,technical_support,technical_website_error
+can I see the current status of purchase {{Order Number}}?,delivery,track_order
+could you help me cancelling purchase {{Order Number}}?,other,order_cancellation
+i dont know what to do to get a compensation,refund,refund_request
+help me create a {{Account Type}} account,account_access,account_creation
+I have to correct my delivery address,delivery,delivery_address
+My two factor authentication code does not work,account_access,account_access
+I cannot place my order because checkout freezes on the website.,technical_support,technical_checkout_error
+i dont know how i can leave feedback for ur products,other,product_information
+I want to cancel my subscription to your newsletter,other,newsletter
+i dont know whatto do to talk to customer assistance,other,human_request
+send me invoice from {{Person Name}},other,invoice_request
+where do i see the status of order {{Order Number}},delivery,track_order
+I don't know what I have to do to lodge a customer claim,other,general_complaint
+new freemium account,account_access,account_creation
+"I have got to check what shipment methods I have, help me",delivery,delivery_options
+is it possible to get a reimbursement?,refund,refund_request
+I need help to cancel purchase {{Order Number}},other,order_cancellation
+i try to lodge a cliam,other,general_complaint
+I need help to shop a product,other,product_information
+i want help trying to change the address,delivery,delivery_address
+what do I need to do to recover my user account PIN code?,account_access,account_access
+I'm trying to check what options for delivery are there,delivery,delivery_options
+edit purchase {{Order Number}},other,order_change
+how could I make a consumer claim against your company?,other,general_complaint
+i need assistance seeing when will my package arrive,delivery,delivery_delay
+help me to check the withdrawal fees,other,cancellation_fee
+need help to see in what cases can I request my money back,refund,refund_policy
+how can I reset the goddamn access key of my profile?,account_access,account_access
+where can i notify of troubles with payments,payment,payment_issue
+I ned help checking the rebate current status,refund,refund_pending
+i have got to download the bill from {{Person Name}} help me,other,invoice_request
+assistance to see the ETA of purchase {{Order Number}},delivery,track_order
+assistance signing up to the company newsletter,other,newsletter
+where can I check if there is anything enw on the refund?,refund,refund_pending
+I want assistance updating the shipping address,delivery,delivery_address
+have a question abut canceling purchase {{Order Number}},other,order_cancellation
+I need to check in which cases can I request my money back,refund,refund_policy
+"I ordered some article, cancel purchase {{Order Number}}",other,order_cancellation
+can you help me seeing the status of order {{Order Number}}?,delivery,track_order
+where do i report problems with online payment,payment,payment_issue
+The web store will not let me log in after I enter my email.,technical_support,technical_login_error
+need help seeing the fucking withdrawal charge,other,cancellation_fee
+I need assistance to submit my feedback about your products,other,product_information
+I cannot connect the device to WiFi,technical_support,technical_website_error
+I do not know what I have to do to list the payment options,payment,payment_methods
+"I would like to find my bills from {{Person Name}}, how to do it?",other,invoice_request
+payment issues,payment,payment_issue
+information about the subscription to the newsletter,other,newsletter
+opdn platinum account,account_access,account_creation
+what do i have to do to find my bills from {{Person Name}},other,invoice_request
+I'm trying to cancel order {{Order Number}},other,order_cancellation
+can I check in what cases can I request the damn refunds?,refund,refund_policy
+want assistanfe to shop several damn articles,other,product_information
+i need assistance to see when will my product arrive,delivery,delivery_delay
+assistance to recover the key of my user profile,account_access,account_access
+I have to see what shipping options you offer,delivery,delivery_options
+i have to find my invoice #12588 how todo it,other,invoice_request
+i do not know how to see the withdrawal penalties,other,cancellation_fee
+I am trying to check when my article is going to arrive,delivery,delivery_delay
+I cannot sign in to the web store; it says error code C102.,technical_support,technical_login_error
+"I have to see the withdrawal fees, can you help me?",other,cancellation_fee
+I need to change my newsletter subscription,other,general_complaint
+what do I have to do to check the status of my rebate?,refund,refund_pending
+help me speaking to customer support,other,human_request
+could I check my bill from {{Person Name}}?,other,invoice_request
+do ya deliver to {{Delivery Country}},delivery,delivery_options
+I need assistance to purchase some of your item,other,product_information
+"I need to see what delivery methods you offer, help me",delivery,delivery_options
+where could I inform of an issue with online payment?,payment,payment_issue
+I don't know what I have to do to delete my platinum account,account_access,account_management
+help regarding payment,payment,payment_issue
+I don't know how I can check your reimbursement policy,refund,refund_policy
+"I am not registered, I want assistance opening a {{Account Type}} accont",account_access,account_creation
+I'm unhzppy with ur work make a reclamation,other,general_complaint
+can you help me creating a pro account?,account_access,account_creation
+where can I get the bill #85632?,other,invoice_request
+find information about the shipping methods,delivery,delivery_options
+how to set up my secondary shipping address?,delivery,delivery_address
+"I have to download bill #12588, I need help",other,invoice_request
+"I need to use the gold profile, how can I do it?",account_access,account_management
+"I have got to see your refund policy, how could I do it?",refund,refund_policy

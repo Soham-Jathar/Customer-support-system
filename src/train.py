@@ -6,6 +6,7 @@ from pathlib import Path
 
 import joblib
 import pandas as pd
+from sklearn.calibration import CalibratedClassifierCV
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import FeatureUnion, Pipeline
@@ -15,13 +16,16 @@ from src.preprocess import normalize_text
 
 
 def build_classifier() -> Pipeline:
-    return Pipeline([
+    base = Pipeline([
         ("features", FeatureUnion([
             ("word", TfidfVectorizer(ngram_range=(1, 2), sublinear_tf=True)),
             ("char", TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), sublinear_tf=True)),
         ])),
         ("classifier", LogisticRegression(max_iter=2000, class_weight="balanced", random_state=42)),
     ])
+    # Post-hoc sigmoid calibration makes predict_proba scores more meaningful
+    # than raw multiclass Logistic Regression scores on natural user phrasing.
+    return CalibratedClassifierCV(estimator=base, method="sigmoid", cv=3)
 
 
 def load_data(path: str | Path) -> pd.DataFrame:

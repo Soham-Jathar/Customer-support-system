@@ -1,4 +1,4 @@
-"""Evaluate the separate broad query-type classifier on the official test split."""
+"""Evaluate the separate broad query-type classifier on the held-out split."""
 from __future__ import annotations
 
 import argparse
@@ -18,7 +18,7 @@ from src.train import load_data  # noqa: E402
 
 def main(test_path: str) -> None:
     data = load_data(test_path)
-    expected = data.intent.map(query_type_for)
+    expected = data["query_type"] if "query_type" in data else data.intent.map(query_type_for)
     model = joblib.load(QUERY_TYPE_MODEL_PATH)
     predicted = model.predict(data.text)
     metrics = {
@@ -36,5 +36,5 @@ def main(test_path: str) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--test", default=str(ROOT / "data" / "banking77" / "banking77_test.csv"))
+    parser.add_argument("--test", default=str(ROOT / "data" / "generic" / "test.csv"))
     main(parser.parse_args().test)

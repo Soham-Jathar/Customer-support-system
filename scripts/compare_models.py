@@ -18,8 +18,8 @@ def load(name: str) -> dict:
 
 
 def main() -> None:
-    baseline = load("banking77_test_metrics.json")
-    transformer = load("distilbert_banking77_test_metrics.json")
+    baseline = load("generic_intent_test_metrics.json")
+    transformer = load("distilbert_generic_intent_test_metrics.json")
     names = ["TF-IDF +\nLogistic Regression", "DistilBERT"]
     metrics = ["accuracy", "macro_f1", "weighted_f1"]
     labels = ["Accuracy", "Macro F1", "Weighted F1"]
@@ -36,14 +36,14 @@ def main() -> None:
         axis.tick_params(axis="y", left=False)
         for bar, value in zip(bars, pair):
             axis.text(bar.get_x() + bar.get_width() / 2, value + .02, f"{value:.4f}", ha="center", fontweight="bold")
-    figure.suptitle("BANKING77 Official Test-Set Model Comparison", fontsize=14, fontweight="bold")
+    figure.suptitle("Generic Customer-Support Held-Out Model Comparison", fontsize=14, fontweight="bold")
     figure.tight_layout()
     figure.savefig(OUTPUTS / "model_comparison.png", dpi=220, bbox_inches="tight")
     summary = (
-        "BANKING77 official test-set comparison\n"
+        "Generic customer-support held-out test comparison\n"
         f"TF-IDF + Logistic Regression: accuracy={baseline['accuracy']:.4f}, macro_f1={baseline['macro_f1']:.4f}, weighted_f1={baseline['weighted_f1']:.4f}\n"
         f"DistilBERT: accuracy={transformer['accuracy']:.4f}, macro_f1={transformer['macro_f1']:.4f}, weighted_f1={transformer['weighted_f1']:.4f}\n"
-        "Conclusion: select TF-IDF + Logistic Regression for this prototype because it achieved the higher official-test macro F1."
+        "Conclusion: select TF-IDF + Logistic Regression for this prototype because it achieved the higher held-out macro F1."
     )
     (OUTPUTS / "model_comparison_summary.txt").write_text(summary, encoding="utf-8")
     print(summary)

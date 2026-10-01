@@ -1,17 +1,24 @@
 # Data and evaluation plan
 
-## Dataset plan
+## Dataset workflow
 
-Use BANKING77 as the primary benchmark. It supplies an official train/test split with 77 fine-grained online-banking intents. Preserve those original intent labels for training and evaluate on the untouched official test split. `data/safety_eval.csv` is a separate project-authored banking safety test set for escalation policy; it is never used to train the classifier.
+1. Download and map Bitext into explicit query-type and fine-intent labels.
+2. Build the documented technical-support extension because Bitext has no dedicated technical class.
+3. Create the stratified held-out split before training.
+4. Fit the fine-intent baseline only on `data/generic/train.csv` and evaluate once on `data/generic/test.csv`.
 
-## Evaluation
+## Metrics
 
-- Create stratified train/validation/test splits before training.
-- Report accuracy only as a secondary metric; report macro precision, recall, F1, per-class F1, and confusion matrix.
-- Keep the manual safety set out of training and measure priority/escalation precision and recall separately.
-- Conduct error analysis for confused fine-grained labels such as unrecognized cash withdrawals versus cash-withdrawal charges, and card-payment fees versus exchange-rate issues.
-- Compare DistilBERT and TF-IDF + Logistic Regression on the same official test split and report quality, latency, and failure modes.
+- Fine intent: accuracy, macro F1, weighted F1, per-intent precision/recall/F1, confusion matrix.
+- Query type: accuracy, macro F1, per-type report.
+- Retrieval: Recall@5 over labelled policy queries.
+- Safety policy: priority accuracy plus escalation precision, recall, and F1 on a separate authored safety set.
+- Model comparison: use the same held-out split for TF-IDF + Logistic Regression and DistilBERT.
+
+## Error analysis
+
+Review likely confusion pairs such as delayed delivery versus tracking, payment failure versus duplicate charge, refund request versus pending refund, and website error versus checkout error. Separately inspect false negatives for critical safety language because those errors are more consequential than routine routing mistakes.
 
 ## Current limitations
 
-The benchmark is English-only and represents online-banking queries, not all real banking traffic. The small safety set is project-authored and should be described as a policy test, not a population-level performance claim. Add a second annotator and report inter-annotator agreement before making stronger claims.
+Results reflect the mapped public dataset and project-owned synthetic technical extension, not live company traffic. Sentiment is English-oriented and rule patterns must be reviewed before use with another company or language.

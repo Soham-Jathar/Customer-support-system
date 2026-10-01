@@ -1,34 +1,28 @@
-# Intelligent Customer Support Triage
+# Intelligent Customer Support System Using NLP
 
-An explainable NLP system for banking customer-ticket classification, sentiment analysis, priority detection, knowledge-base retrieval, routing, ticket persistence, and human escalation.
+An explainable NLP system that understands customer messages, classifies the problem, estimates priority, retrieves policy evidence, and routes sensitive or uncertain tickets to human support agents.
 
-## Features
+## What it implements
 
-- BANKING77's 77 fine-grained banking intents, retained without collapsing labels.
-- TF-IDF word/character n-grams + Logistic Regression baseline with confidence scores.
-- VADER sentiment analysis with an offline fallback.
-- Transparent priority policy: fraud/security language is **critical** regardless of sentiment.
-- Human escalation for suspected fraud, low-confidence predictions, and explicit agent requests.
-- Regex-based extraction of order IDs, transaction IDs, amounts, and dates.
-- FastAPI API with persistent ticket history; SQLite runs locally and PostgreSQL is configurable for deployment.
-- Sentence Transformers + FAISS retrieval when installed, with an explicit TF-IDF fallback for offline demos.
-- Streamlit UI, reproducible training, intent/retrieval evaluation, confusion matrix, and safety tests.
+- A hierarchical classifier: **six query types** (`payment`, `delivery`, `refund`, `account_access`, `technical_support`, `other`) and fine-grained issue intents inside those queues.
+- TF-IDF word and character n-grams with Logistic Regression as the reproducible baseline; fine-tuned DistilBERT is an optional comparison.
+- VADER sentiment analysis, used as context rather than as the sole urgency signal.
+- Transparent priority and escalation rules for suspected fraud, high-impact delivery/payment issues, low confidence, and explicit human requests.
+- Operational entity extraction for order, tracking, and transaction references, amounts, and dates.
+- Sentence Transformers + FAISS policy retrieval when available, with a visible TF-IDF fallback.
+- Separate React customer portal and access-key-protected agent console, FastAPI API, SQLite development persistence, and optional PostgreSQL deployment.
+- End-to-end ticket lifecycle: customer-safe status tracking, agent-reviewed corrections, resolution notes, and restricted CSV feedback export for future retraining.
 
-## Run
+## Start the application
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 pip install -r requirements-advanced.txt
-python scripts/prepare_banking77.py
-python -m src.train --data data/banking77/banking77_train.csv
-python scripts/evaluate.py --data data/banking77/banking77_train.csv
-python scripts/evaluate_banking77_test.py
-python scripts/evaluate_retrieval.py
 uvicorn api.main:app --reload --port 8000
 ```
 
-Open a second terminal for the primary React customer-and-agent interface:
+In another terminal:
 
 ```powershell
 cd frontend
@@ -36,48 +30,68 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173`. The React frontend calls FastAPI at `http://127.0.0.1:8000` and displays the live ticket queue.
+Open `http://localhost:5173`. API documentation is at `http://127.0.0.1:8000/docs`.
 
-The Streamlit `app.py` remains available as a lightweight fallback dashboard, but React/Vite is the primary frontend.
+## Build the generic NLP models
+
+Run these from the project root after activating `.venv`:
+
+```powershell
+# Public Bitext data, mapped to the project's explicit two-level taxonomy.
+python scripts/prepare_bitext_data.py
+
+# Project-owned, transparently synthetic technical-support extension.
+python scripts/create_technical_extension.py
+
+# Training-only paraphrases for more natural demo wording.
+python scripts/create_realistic_paraphrases.py
+
+# Deterministic 80/20 train/held-out split.
+python scripts/build_training_set.py
+
+# Baseline fine-intent and broad query-type models.
+python -m src.train --data data/generic/train.csv
+python scripts/train_query_type.py --data data/generic/train.csv
+
+# Held-out evaluation and safety/retrieval evaluation.
+python scripts/evaluate.py --data data/generic/test.csv
+python scripts/evaluate_query_type.py --test data/generic/test.csv
+python scripts/evaluate_safety.py
+python scripts/evaluate_retrieval.py
+```
+
+Optional DistilBERT comparison:
+
+```powershell
+python scripts/train_transformer.py --data data/generic/train.csv --output models/distilbert-generic-intent
+python scripts/evaluate_transformer.py --model models/distilbert-generic-intent --test data/generic/test.csv
+python scripts/compare_models.py
+```
 
 ## Agent access
 
-Customer ticket submission is public in this local prototype. The Agent Console, ticket history, resolution endpoint, and model-quality metrics require an agent access key.
+Customer submission is public in this local prototype. The agent queue, stored ticket history, resolution endpoint, and model metrics require a local access key.
 
 ```powershell
 Copy-Item .env.example .env
 notepad .env
 ```
 
-Set `AGENT_ACCESS_KEY` in `.env` to a long local secret, install updated dependencies with `pip install -r requirements.txt`, then restart FastAPI. Use that same key only on the Agent Console sign-in screen. This is local prototype authorization, not production identity management.
+Set a long `AGENT_ACCESS_KEY`, restart FastAPI, then use that key only on the Agent Console sign-in screen. This is prototype authorization, not production identity management.
 
-## Advanced experiments
+## Human-feedback retraining loop
 
-```powershell
-python scripts/train_transformer.py --data data/banking77/banking77_train.csv
-python scripts/evaluate_transformer.py
-docker compose up -d postgres
-```
-
-Copy `.env.example` to `.env` and set `DATABASE_URL` before running FastAPI with PostgreSQL.
-
-## Dataset workflow
+An agent can export reviewed corrections from the Operations/Agent Console. Validate the export before using it in retraining; the held-out test CSV is never modified.
 
 ```powershell
-# Download BANKING77's official train/test split and preserve all 77 labels.
-python scripts/prepare_banking77.py
-python -m src.train --data data/banking77/banking77_train.csv
-python scripts/evaluate.py --data data/banking77/banking77_train.csv
-python scripts/evaluate_banking77_test.py
-python scripts/evaluate_safety.py
-python scripts/evaluate_retrieval.py
-python scripts/compare_models.py
+python scripts/prepare_feedback_for_retraining.py --input "$env:USERPROFILE\Downloads\agent_feedback.csv"
+python scripts/build_retraining_set.py
+python -m src.train --data data/retraining/train_with_feedback.csv
+python scripts/train_query_type.py --data data/retraining/train_with_feedback.csv
 ```
 
-Use `data/banking77/banking77_test.csv` as the untouched final test set. Read `docs/DATA_CARD.md` before reporting results.
+## Deliberate safety boundary
 
-The seed CSV only makes the interface reproducible. For faculty evaluation, use the documented benchmark split and separately annotated safety test set. See `docs/ARCHITECTURE.md`, `docs/DATA_AND_EVALUATION.md`, and `docs/PROJECT_PROPOSAL.md`.
+The system never invents delivery dates, order status, refund approval, or account outcomes. It can only summarize retrieved policy text. Live operational facts require a company-system lookup or human review.
 
-## Deliberate scope
-
-This prototype does **not** generate factual answers about account balances, transaction status, refunds, or card-delivery dates. Its response module only summarizes retrieved policy text; live facts require an approved banking-system lookup.
+See [the proposal](docs/PROJECT_PROPOSAL.md), [data card](docs/DATA_CARD.md), [evaluation plan](docs/DATA_AND_EVALUATION.md), and [architecture](docs/ARCHITECTURE.md).

@@ -1,15 +1,19 @@
 query,expected_document_id
-I was charged twice for one card purchase,PAY-001
-Why did I get two card-payment charges,PAY-001
-I do not recognize this transaction,PAY-002
-There is an unauthorized cash withdrawal,PAY-002
-Where is my replacement card,CARD-001
-Can you track my new card,CARD-001
-My bank transfer is pending,TRF-001
-The recipient has not received my transfer,TRF-001
-I forgot my passcode,ACC-001
-My account is locked and I cannot verify it,ACC-001
-Why was the exchange rate different on my card payment,FX-001
-How are cash conversion rates calculated,FX-001
+I was charged twice for one purchase,PAY-001
+Why did I get two payment charges,PAY-001
+I do not recognize this payment,PAY-002
+There is an unauthorized charge on my account,PAY-002
+My order has not arrived,DEL-001
+Can you track my shipment,DEL-001
+The parcel is marked delivered but it is missing,DEL-002
+My package is not here even though the tracking says delivered,DEL-002
+Can I request a refund for my order,REF-001
+What is the policy for returning an item,REF-001
+When will my refund be processed,REF-002
+My refund is still pending,REF-002
+I forgot my password,ACC-001
+My account is locked and I cannot sign in,ACC-001
+The app crashes when I try to check out,TECH-001
+The website shows an error when I place an order,TECH-001
 I want to talk to a human agent,GEN-001
 Please transfer me to a supervisor,GEN-001

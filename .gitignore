@@ -5,5 +5,6 @@ __pycache__/
 .venv/
 .env
 support.db
+support_generic.db
 models/
 outputs/

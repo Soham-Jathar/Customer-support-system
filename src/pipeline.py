@@ -14,7 +14,7 @@ from src.taxonomy import query_type_for
 @lru_cache(maxsize=1)
 def load_classifier():
     if not MODEL_PATH.exists():
-        raise FileNotFoundError("Model missing. Run: py scripts/prepare_banking77.py, then py -m src.train --data data/banking77/banking77_train.csv")
+        raise FileNotFoundError("Generic intent model missing. Run the generic data-preparation and training commands in README.md.")
     return joblib.load(MODEL_PATH)
 
 
@@ -56,7 +56,7 @@ def triage(text: str) -> dict:
         query_confidence = float(query_probabilities[query_index])
         query_source = "TF-IDF + Logistic Regression query-type classifier"
     sentiment, score, sentiment_source = analyse_sentiment(text)
-    decision = make_decision(intent, confidence, sentiment, text)
+    decision = make_decision(query_type, intent, confidence, sentiment, text, query_confidence)
     return {
         "intent": intent, "confidence": confidence,
         "query_type": query_type, "query_type_confidence": query_confidence, "query_type_source": query_source,

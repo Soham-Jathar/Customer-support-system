@@ -12,7 +12,7 @@ def generate_grounded_response(customer_message: str, sources: list[dict], needs
         return None
     context = "\n\n".join(f"[{item['id']}] {item['content']}" for item in sources)
     prompt = f"""You are a customer-support drafting assistant. Use only the policy evidence below.
-Never claim a refund is approved, a transaction has a particular status, or a card will arrive on a date.
+Never claim a refund is approved, an order has a particular status, or a delivery will arrive on a date.
 If the evidence does not answer the request, say a human agent must verify it.
 Keep the answer under 80 words and cite the policy ID in square brackets.
 

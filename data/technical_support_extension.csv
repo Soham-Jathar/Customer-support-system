@@ -1,0 +1,217 @@
+text,query_type,intent
+I cannot sign in to the mobile app; it says an unexpected error.,technical_support,technical_login_error
+I cannot sign in to the website; it says error code E500.,technical_support,technical_login_error
+I cannot sign in to the customer portal; it says a blank screen.,technical_support,technical_login_error
+I cannot sign in to the shopping app; it says a server error.,technical_support,technical_login_error
+I cannot sign in to the web store; it says error code C102.,technical_support,technical_login_error
+I cannot sign in to the order page; it says a loading error.,technical_support,technical_login_error
+The mobile app will not let me log in after I enter my email.,technical_support,technical_login_error
+The website will not let me log in after I enter my email.,technical_support,technical_login_error
+The customer portal will not let me log in after I enter my email.,technical_support,technical_login_error
+The shopping app will not let me log in after I enter my email.,technical_support,technical_login_error
+The web store will not let me log in after I enter my email.,technical_support,technical_login_error
+The order page will not let me log in after I enter my email.,technical_support,technical_login_error
+I receive a an unexpected error message whenever I try to access my account on the mobile app.,technical_support,technical_login_error
+I receive a error code E500 message whenever I try to access my account on the website.,technical_support,technical_login_error
+I receive a a blank screen message whenever I try to access my account on the customer portal.,technical_support,technical_login_error
+I receive a a server error message whenever I try to access my account on the shopping app.,technical_support,technical_login_error
+I receive a error code C102 message whenever I try to access my account on the web store.,technical_support,technical_login_error
+I receive a a loading error message whenever I try to access my account on the order page.,technical_support,technical_login_error
+Login is not working on the mobile app; please help me regain access.,technical_support,technical_login_error
+Login is not working on the website; please help me regain access.,technical_support,technical_login_error
+Login is not working on the customer portal; please help me regain access.,technical_support,technical_login_error
+Login is not working on the shopping app; please help me regain access.,technical_support,technical_login_error
+Login is not working on the web store; please help me regain access.,technical_support,technical_login_error
+Login is not working on the order page; please help me regain access.,technical_support,technical_login_error
+The mobile app keeps rejecting my correct login details.,technical_support,technical_login_error
+The website keeps rejecting my correct login details.,technical_support,technical_login_error
+The customer portal keeps rejecting my correct login details.,technical_support,technical_login_error
+The shopping app keeps rejecting my correct login details.,technical_support,technical_login_error
+The web store keeps rejecting my correct login details.,technical_support,technical_login_error
+The order page keeps rejecting my correct login details.,technical_support,technical_login_error
+Why does the mobile app show an unexpected error when I sign in?,technical_support,technical_login_error
+Why does the website show error code E500 when I sign in?,technical_support,technical_login_error
+Why does the customer portal show a blank screen when I sign in?,technical_support,technical_login_error
+Why does the shopping app show a server error when I sign in?,technical_support,technical_login_error
+Why does the web store show error code C102 when I sign in?,technical_support,technical_login_error
+Why does the order page show a loading error when I sign in?,technical_support,technical_login_error
+The mobile app crashes when I open my order history.,technical_support,technical_app_crash
+The website crashes when I open my order history.,technical_support,technical_app_crash
+The customer portal crashes when I open my order history.,technical_support,technical_app_crash
+The shopping app crashes when I open my order history.,technical_support,technical_app_crash
+The web store crashes when I open my order history.,technical_support,technical_app_crash
+The order page crashes when I open my order history.,technical_support,technical_app_crash
+My mobile app closes unexpectedly after the latest update.,technical_support,technical_app_crash
+My website closes unexpectedly after the latest update.,technical_support,technical_app_crash
+My customer portal closes unexpectedly after the latest update.,technical_support,technical_app_crash
+My shopping app closes unexpectedly after the latest update.,technical_support,technical_app_crash
+My web store closes unexpectedly after the latest update.,technical_support,technical_app_crash
+My order page closes unexpectedly after the latest update.,technical_support,technical_app_crash
+The mobile app freezes and then shuts down before I can use it.,technical_support,technical_app_crash
+The website freezes and then shuts down before I can use it.,technical_support,technical_app_crash
+The customer portal freezes and then shuts down before I can use it.,technical_support,technical_app_crash
+The shopping app freezes and then shuts down before I can use it.,technical_support,technical_app_crash
+The web store freezes and then shuts down before I can use it.,technical_support,technical_app_crash
+The order page freezes and then shuts down before I can use it.,technical_support,technical_app_crash
+I cannot use the mobile app because it keeps crashing.,technical_support,technical_app_crash
+I cannot use the website because it keeps crashing.,technical_support,technical_app_crash
+I cannot use the customer portal because it keeps crashing.,technical_support,technical_app_crash
+I cannot use the shopping app because it keeps crashing.,technical_support,technical_app_crash
+I cannot use the web store because it keeps crashing.,technical_support,technical_app_crash
+I cannot use the order page because it keeps crashing.,technical_support,technical_app_crash
+Opening the mobile app causes a crash on my device.,technical_support,technical_app_crash
+Opening the website causes a crash on my device.,technical_support,technical_app_crash
+Opening the customer portal causes a crash on my device.,technical_support,technical_app_crash
+Opening the shopping app causes a crash on my device.,technical_support,technical_app_crash
+Opening the web store causes a crash on my device.,technical_support,technical_app_crash
+Opening the order page causes a crash on my device.,technical_support,technical_app_crash
+The mobile app becomes unresponsive every time I view an order.,technical_support,technical_app_crash
+The website becomes unresponsive every time I view an order.,technical_support,technical_app_crash
+The customer portal becomes unresponsive every time I view an order.,technical_support,technical_app_crash
+The shopping app becomes unresponsive every time I view an order.,technical_support,technical_app_crash
+The web store becomes unresponsive every time I view an order.,technical_support,technical_app_crash
+The order page becomes unresponsive every time I view an order.,technical_support,technical_app_crash
+I get an unexpected error when I try to check out on the mobile app.,technical_support,technical_checkout_error
+I get error code E500 when I try to check out on the website.,technical_support,technical_checkout_error
+I get a blank screen when I try to check out on the customer portal.,technical_support,technical_checkout_error
+I get a server error when I try to check out on the shopping app.,technical_support,technical_checkout_error
+I get error code C102 when I try to check out on the web store.,technical_support,technical_checkout_error
+I get a loading error when I try to check out on the order page.,technical_support,technical_checkout_error
+The checkout page will not complete my order in the mobile app.,technical_support,technical_checkout_error
+The checkout page will not complete my order in the website.,technical_support,technical_checkout_error
+The checkout page will not complete my order in the customer portal.,technical_support,technical_checkout_error
+The checkout page will not complete my order in the shopping app.,technical_support,technical_checkout_error
+The checkout page will not complete my order in the web store.,technical_support,technical_checkout_error
+The checkout page will not complete my order in the order page.,technical_support,technical_checkout_error
+I cannot place my order because checkout freezes on the mobile app.,technical_support,technical_checkout_error
+I cannot place my order because checkout freezes on the website.,technical_support,technical_checkout_error
+I cannot place my order because checkout freezes on the customer portal.,technical_support,technical_checkout_error
+I cannot place my order because checkout freezes on the shopping app.,technical_support,technical_checkout_error
+I cannot place my order because checkout freezes on the web store.,technical_support,technical_checkout_error
+I cannot place my order because checkout freezes on the order page.,technical_support,technical_checkout_error
+The mobile app shows an unexpected error after I press place order.,technical_support,technical_checkout_error
+The website shows error code E500 after I press place order.,technical_support,technical_checkout_error
+The customer portal shows a blank screen after I press place order.,technical_support,technical_checkout_error
+The shopping app shows a server error after I press place order.,technical_support,technical_checkout_error
+The web store shows error code C102 after I press place order.,technical_support,technical_checkout_error
+The order page shows a loading error after I press place order.,technical_support,technical_checkout_error
+Checkout is broken and will not accept my selection on the mobile app.,technical_support,technical_checkout_error
+Checkout is broken and will not accept my selection on the website.,technical_support,technical_checkout_error
+Checkout is broken and will not accept my selection on the customer portal.,technical_support,technical_checkout_error
+Checkout is broken and will not accept my selection on the shopping app.,technical_support,technical_checkout_error
+Checkout is broken and will not accept my selection on the web store.,technical_support,technical_checkout_error
+Checkout is broken and will not accept my selection on the order page.,technical_support,technical_checkout_error
+Please fix the checkout error in the mobile app; I cannot finish my order.,technical_support,technical_checkout_error
+Please fix the checkout error in the website; I cannot finish my order.,technical_support,technical_checkout_error
+Please fix the checkout error in the customer portal; I cannot finish my order.,technical_support,technical_checkout_error
+Please fix the checkout error in the shopping app; I cannot finish my order.,technical_support,technical_checkout_error
+Please fix the checkout error in the web store; I cannot finish my order.,technical_support,technical_checkout_error
+Please fix the checkout error in the order page; I cannot finish my order.,technical_support,technical_checkout_error
+The mobile app page displays an unexpected error instead of my account.,technical_support,technical_website_error
+The website page displays error code E500 instead of my account.,technical_support,technical_website_error
+The customer portal page displays a blank screen instead of my account.,technical_support,technical_website_error
+The shopping app page displays a server error instead of my account.,technical_support,technical_website_error
+The web store page displays error code C102 instead of my account.,technical_support,technical_website_error
+The order page page displays a loading error instead of my account.,technical_support,technical_website_error
+I see a broken page in the mobile app when I search for a product.,technical_support,technical_website_error
+I see a broken page in the website when I search for a product.,technical_support,technical_website_error
+I see a broken page in the customer portal when I search for a product.,technical_support,technical_website_error
+I see a broken page in the shopping app when I search for a product.,technical_support,technical_website_error
+I see a broken page in the web store when I search for a product.,technical_support,technical_website_error
+I see a broken page in the order page when I search for a product.,technical_support,technical_website_error
+The mobile app is not loading correctly in my browser.,technical_support,technical_website_error
+The website is not loading correctly in my browser.,technical_support,technical_website_error
+The customer portal is not loading correctly in my browser.,technical_support,technical_website_error
+The shopping app is not loading correctly in my browser.,technical_support,technical_website_error
+The web store is not loading correctly in my browser.,technical_support,technical_website_error
+The order page is not loading correctly in my browser.,technical_support,technical_website_error
+A technical error prevents me from using the mobile app.,technical_support,technical_website_error
+A technical error prevents me from using the website.,technical_support,technical_website_error
+A technical error prevents me from using the customer portal.,technical_support,technical_website_error
+A technical error prevents me from using the shopping app.,technical_support,technical_website_error
+A technical error prevents me from using the web store.,technical_support,technical_website_error
+A technical error prevents me from using the order page.,technical_support,technical_website_error
+Buttons on the mobile app do nothing when I click them.,technical_support,technical_website_error
+Buttons on the website do nothing when I click them.,technical_support,technical_website_error
+Buttons on the customer portal do nothing when I click them.,technical_support,technical_website_error
+Buttons on the shopping app do nothing when I click them.,technical_support,technical_website_error
+Buttons on the web store do nothing when I click them.,technical_support,technical_website_error
+Buttons on the order page do nothing when I click them.,technical_support,technical_website_error
+The mobile app keeps showing an unexpected error; can technical support investigate?,technical_support,technical_website_error
+The website keeps showing error code E500; can technical support investigate?,technical_support,technical_website_error
+The customer portal keeps showing a blank screen; can technical support investigate?,technical_support,technical_website_error
+The shopping app keeps showing a server error; can technical support investigate?,technical_support,technical_website_error
+The web store keeps showing error code C102; can technical support investigate?,technical_support,technical_website_error
+The order page keeps showing a loading error; can technical support investigate?,technical_support,technical_website_error
+I need help setting up my smart speaker with the mobile app.,technical_support,technical_device_setup
+I need help setting up my wireless printer with the website.,technical_support,technical_device_setup
+I need help setting up my fitness tracker with the customer portal.,technical_support,technical_device_setup
+I need help setting up my robot vacuum with the shopping app.,technical_support,technical_device_setup
+I need help setting up my security camera with the web store.,technical_support,technical_device_setup
+I need help setting up my Bluetooth headset with the order page.,technical_support,technical_device_setup
+The smart speaker will not connect to the mobile app.,technical_support,technical_device_setup
+The wireless printer will not connect to the website.,technical_support,technical_device_setup
+The fitness tracker will not connect to the customer portal.,technical_support,technical_device_setup
+The robot vacuum will not connect to the shopping app.,technical_support,technical_device_setup
+The security camera will not connect to the web store.,technical_support,technical_device_setup
+The Bluetooth headset will not connect to the order page.,technical_support,technical_device_setup
+How can I configure my new smart speaker in the mobile app?,technical_support,technical_device_setup
+How can I configure my new wireless printer in the website?,technical_support,technical_device_setup
+How can I configure my new fitness tracker in the customer portal?,technical_support,technical_device_setup
+How can I configure my new robot vacuum in the shopping app?,technical_support,technical_device_setup
+How can I configure my new security camera in the web store?,technical_support,technical_device_setup
+How can I configure my new Bluetooth headset in the order page?,technical_support,technical_device_setup
+Setup for the smart speaker fails with an unexpected error.,technical_support,technical_device_setup
+Setup for the wireless printer fails with error code E500.,technical_support,technical_device_setup
+Setup for the fitness tracker fails with a blank screen.,technical_support,technical_device_setup
+Setup for the robot vacuum fails with a server error.,technical_support,technical_device_setup
+Setup for the security camera fails with error code C102.,technical_support,technical_device_setup
+Setup for the Bluetooth headset fails with a loading error.,technical_support,technical_device_setup
+My smart speaker is not recognised by the mobile app.,technical_support,technical_device_setup
+My wireless printer is not recognised by the website.,technical_support,technical_device_setup
+My fitness tracker is not recognised by the customer portal.,technical_support,technical_device_setup
+My robot vacuum is not recognised by the shopping app.,technical_support,technical_device_setup
+My security camera is not recognised by the web store.,technical_support,technical_device_setup
+My Bluetooth headset is not recognised by the order page.,technical_support,technical_device_setup
+I cannot complete device setup for the smart speaker.,technical_support,technical_device_setup
+I cannot complete device setup for the wireless printer.,technical_support,technical_device_setup
+I cannot complete device setup for the fitness tracker.,technical_support,technical_device_setup
+I cannot complete device setup for the robot vacuum.,technical_support,technical_device_setup
+I cannot complete device setup for the security camera.,technical_support,technical_device_setup
+I cannot complete device setup for the Bluetooth headset.,technical_support,technical_device_setup
+My smart speaker stopped working after delivery.,technical_support,technical_product_malfunction
+My wireless printer stopped working after delivery.,technical_support,technical_product_malfunction
+My fitness tracker stopped working after delivery.,technical_support,technical_product_malfunction
+My robot vacuum stopped working after delivery.,technical_support,technical_product_malfunction
+My security camera stopped working after delivery.,technical_support,technical_product_malfunction
+My Bluetooth headset stopped working after delivery.,technical_support,technical_product_malfunction
+The smart speaker is defective and does not operate as described.,technical_support,technical_product_malfunction
+The wireless printer is defective and does not operate as described.,technical_support,technical_product_malfunction
+The fitness tracker is defective and does not operate as described.,technical_support,technical_product_malfunction
+The robot vacuum is defective and does not operate as described.,technical_support,technical_product_malfunction
+The security camera is defective and does not operate as described.,technical_support,technical_product_malfunction
+The Bluetooth headset is defective and does not operate as described.,technical_support,technical_product_malfunction
+I need technical help because my new smart speaker will not turn on.,technical_support,technical_product_malfunction
+I need technical help because my new wireless printer will not turn on.,technical_support,technical_product_malfunction
+I need technical help because my new fitness tracker will not turn on.,technical_support,technical_product_malfunction
+I need technical help because my new robot vacuum will not turn on.,technical_support,technical_product_malfunction
+I need technical help because my new security camera will not turn on.,technical_support,technical_product_malfunction
+I need technical help because my new Bluetooth headset will not turn on.,technical_support,technical_product_malfunction
+The smart speaker has a fault and I need troubleshooting steps.,technical_support,technical_product_malfunction
+The wireless printer has a fault and I need troubleshooting steps.,technical_support,technical_product_malfunction
+The fitness tracker has a fault and I need troubleshooting steps.,technical_support,technical_product_malfunction
+The robot vacuum has a fault and I need troubleshooting steps.,technical_support,technical_product_malfunction
+The security camera has a fault and I need troubleshooting steps.,technical_support,technical_product_malfunction
+The Bluetooth headset has a fault and I need troubleshooting steps.,technical_support,technical_product_malfunction
+Something is wrong with the smart speaker; it fails during normal use.,technical_support,technical_product_malfunction
+Something is wrong with the wireless printer; it fails during normal use.,technical_support,technical_product_malfunction
+Something is wrong with the fitness tracker; it fails during normal use.,technical_support,technical_product_malfunction
+Something is wrong with the robot vacuum; it fails during normal use.,technical_support,technical_product_malfunction
+Something is wrong with the security camera; it fails during normal use.,technical_support,technical_product_malfunction
+Something is wrong with the Bluetooth headset; it fails during normal use.,technical_support,technical_product_malfunction
+Please help diagnose a malfunction with my smart speaker.,technical_support,technical_product_malfunction
+Please help diagnose a malfunction with my wireless printer.,technical_support,technical_product_malfunction
+Please help diagnose a malfunction with my fitness tracker.,technical_support,technical_product_malfunction
+Please help diagnose a malfunction with my robot vacuum.,technical_support,technical_product_malfunction
+Please help diagnose a malfunction with my security camera.,technical_support,technical_product_malfunction
+Please help diagnose a malfunction with my Bluetooth headset.,technical_support,technical_product_malfunction

@@ -50,7 +50,7 @@ class KnowledgeRetriever:
 def grounded_suggestion(results: list[dict], needs_human: bool) -> dict:
     """Never use retrieval to claim live account, transaction, or refund facts."""
     if needs_human:
-        return {"answer": "Your ticket has been escalated to a human agent. They will securely verify the relevant account, card, or transaction details before taking action.", "grounded": False}
+        return {"answer": "Your ticket has been escalated to a human agent. They will securely verify the relevant account, order, delivery, or payment details before taking action.", "grounded": False}
     if not results or results[0]["score"] < 0.10:
         return {"answer": "I could not find a supported policy answer for this request, so a human agent should review it.", "grounded": False}
     source = results[0]

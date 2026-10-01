@@ -13,7 +13,7 @@ from src.config import ROOT
 from src.preprocess import mask_entities, mask_sensitive_data
 from src.taxonomy import query_type_for
 
-DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{(ROOT / 'support.db').as_posix()}")
+DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{(ROOT / 'support_generic.db').as_posix()}")
 connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
 engine = create_engine(DATABASE_URL, connect_args=connect_args)
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
@@ -52,6 +52,32 @@ class Ticket(Base):
             "escalation_reasons": json.loads(self.escalation_reasons),
             "entities": json.loads(self.entities), "retrieved_sources": json.loads(self.retrieved_sources),
             "agent_outcome": self.agent_outcome,
+        }
+
+
+class TicketReview(Base):
+    """Human feedback retained separately from the model's original decision.
+
+    Keeping predictions and reviewed labels side by side creates an auditable
+    feedback dataset without overwriting what the system originally predicted.
+    """
+    __tablename__ = "ticket_reviews"
+
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    ticket_id: Mapped[str] = mapped_column(String(36), unique=True, index=True)
+    reviewer: Mapped[str] = mapped_column(String(80), default="Support agent")
+    final_query_type: Mapped[str | None] = mapped_column(String(64), nullable=True)
+    final_intent: Mapped[str | None] = mapped_column(String(96), nullable=True)
+    notes: Mapped[str | None] = mapped_column(Text, nullable=True)
+    reviewed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+
+    def as_dict(self) -> dict:
+        return {
+            "reviewer": self.reviewer,
+            "final_query_type": self.final_query_type,
+            "final_intent": self.final_intent,
+            "notes": self.notes,
+            "reviewed_at": self.reviewed_at.isoformat(),
         }
 
 

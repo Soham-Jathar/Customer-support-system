@@ -1,4 +1,4 @@
-"""Evaluate a fine-tuned Hugging Face intent classifier on BANKING77's test split."""
+"""Evaluate a fine-tuned Hugging Face intent classifier on the held-out split."""
 from __future__ import annotations
 
 import argparse
@@ -37,7 +37,7 @@ def main(model_dir: str, test_path: str) -> None:
         "weighted_f1": f1_score(test.intent, predicted, average="weighted", zero_division=0),
         "per_intent": report,
     }
-    output = ROOT / "outputs" / "distilbert_banking77_test_metrics.json"
+    output = ROOT / "outputs" / "distilbert_generic_intent_test_metrics.json"
     output.write_text(json.dumps(summary, indent=2), encoding="utf-8")
     print(f"Accuracy: {summary['accuracy']:.4f}")
     print(f"Macro F1: {summary['macro_f1']:.4f}")
@@ -48,6 +48,6 @@ def main(model_dir: str, test_path: str) -> None:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", default=str(ROOT / "models" / "distilbert-intent"))
-    parser.add_argument("--test", default=str(ROOT / "data" / "banking77" / "banking77_test.csv"))
+    parser.add_argument("--test", default=str(ROOT / "data" / "generic" / "test.csv"))
     args = parser.parse_args()
     main(args.model, args.test)

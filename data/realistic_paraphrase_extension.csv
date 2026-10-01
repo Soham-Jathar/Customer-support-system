@@ -1,0 +1,53 @@
+text,query_type,intent
+My laptop order has not arrived after five days.,delivery,delivery_delay
+I ordered a product last week and it is still not here.,delivery,delivery_delay
+The delivery is late and I need my package urgently.,delivery,delivery_delay
+Where is my order? It has been delayed for days.,delivery,delivery_delay
+My parcel has not arrived by the promised delivery period.,delivery,delivery_delay
+I need an update because the order has still not been delivered.,delivery,delivery_delay
+Order ORD-12345 is late and I need it as soon as possible.,delivery,delivery_delay
+My delivery has been delayed without an explanation.,delivery,delivery_delay
+How can I track order ORD-12345?,delivery,track_order
+Please show me the current shipment tracking status.,delivery,track_order
+Where can I find my tracking number?,delivery,track_order
+I want to know where my parcel is right now.,delivery,track_order
+Can you help me follow the delivery for my order?,delivery,track_order
+The tracking page is unclear; where is my package?,delivery,track_order
+I requested a refund but it is still pending.,refund,refund_pending
+My refund has not reached my payment method yet.,refund,refund_pending
+When will the pending refund for order ORD-78901 be processed?,refund,refund_pending
+The return was accepted but I have not received my refund.,refund,refund_pending
+Please check the status of my refund; it has taken too long.,refund,refund_pending
+Why is my refund still being processed?,refund,refund_pending
+I want a refund for the item I ordered.,refund,refund_request
+How do I request a refund for order ORD-78901?,refund,refund_request
+The product is not suitable and I would like my money back.,refund,refund_request
+Can I return this order and receive a refund?,refund,refund_request
+Please explain how to start a refund request.,refund,refund_request
+I need to cancel this purchase and request a refund.,refund,refund_request
+I do not recognize a payment of $250 from my account.,payment,payment_issue
+There is an unfamiliar charge on my payment statement.,payment,payment_issue
+My card was charged twice for the same order.,payment,payment_issue
+Payment failed when I tried to complete my order.,payment,payment_issue
+I paid for my order but the payment shows an error.,payment,payment_issue
+Why was I charged an extra amount at checkout?,payment,payment_issue
+The checkout payment was declined even though my details are correct.,payment,payment_issue
+Please investigate this unexpected payment charge.,payment,payment_issue
+I cannot access my account after resetting my password.,account_access,account_access
+The website will not let me sign in.,account_access,account_access
+My account is locked and I need to regain access.,account_access,account_access
+I forgot my password and the recovery link is not working.,account_access,account_access
+I cannot log into the customer portal.,account_access,account_access
+Please help me unlock my account.,account_access,account_access
+The mobile app crashes whenever I try to check out.,technical_support,technical_checkout_error
+Checkout freezes when I press place order.,technical_support,technical_checkout_error
+I get an error while completing the checkout process.,technical_support,technical_checkout_error
+The app closes as soon as I open my shopping basket.,technical_support,technical_checkout_error
+The checkout screen will not load in the mobile app.,technical_support,technical_checkout_error
+A technical issue stops me from placing my order.,technical_support,technical_checkout_error
+The mobile app keeps crashing when I view my orders.,technical_support,technical_app_crash
+My shopping app closes unexpectedly every time I open it.,technical_support,technical_app_crash
+The app freezes and then shuts down.,technical_support,technical_app_crash
+I cannot use the app because it crashes immediately.,technical_support,technical_app_crash
+The latest app update made the application unusable.,technical_support,technical_app_crash
+The app becomes unresponsive after I sign in.,technical_support,technical_app_crash

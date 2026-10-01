@@ -12,7 +12,8 @@ def extract_entities(text: str) -> dict[str, list[str]]:
     """Extract operational IDs without claiming this is a full NER model."""
     text = normalize_text(text)
     return {
-        "order_ids": re.findall(r"\b(?:order\s*(?:id|number)?\s*[:#-]?\s*)?((?!(?:TXN|REF)-?)[A-Z]{2,6}-?\d{4,12})\b", text, flags=re.I),
+        "order_ids": re.findall(r"\b(?:order\s*(?:id|number)?\s*[:#-]?\s*)?((?!(?:TXN|REF|TRACK)-?)[A-Z]{2,6}-?\d{4,12})\b", text, flags=re.I),
+        "tracking_ids": re.findall(r"\b(?:tracking|shipment|parcel)\s*(?:id|number)?\s*[:#-]?\s*([A-Z0-9-]{6,24})\b", text, flags=re.I),
         "transaction_ids": re.findall(r"\b(?:txn|transaction|reference)\s*(?:id|number)?\s*[:#-]?\s*([A-Z0-9-]{5,20})\b", text, flags=re.I),
         "card_references": re.findall(r"\b(?:card\s*)?(?:ending|last\s*(?:four|4)|last\s*digits?)\s*(?:in\s*)?(\d{4})\b", text, flags=re.I),
         "amounts": re.findall(r"(?:₹|\$|€|£)\s?\d+(?:[,.]\d{1,2})?", text),
@@ -34,7 +35,7 @@ def mask_entities(entities: dict[str, list[str]]) -> dict[str, list[str]]:
     """Retain only final four characters of stored operational references."""
     masked: dict[str, list[str]] = {}
     for name, values in entities.items():
-        if name in {"transaction_ids", "order_ids"}:
+        if name in {"transaction_ids", "order_ids", "tracking_ids"}:
             masked[name] = [f"***{value[-4:]}" if len(value) > 4 else "[REDACTED]" for value in values]
         else:
             masked[name] = values
