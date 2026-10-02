@@ -138,7 +138,3 @@ docs/             Proposal, architecture, data card, and evaluation notes
 ```
 
 For more detail, read the [architecture](docs/ARCHITECTURE.md) and [project proposal](docs/PROJECT_PROPOSAL.md). Agent-reviewed corrections can be exported from the Operations view and validated before retraining; they never overwrite the held-out test split.
-
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
