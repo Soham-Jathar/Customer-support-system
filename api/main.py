@@ -83,6 +83,7 @@ def metrics() -> dict:
 
     return {
         "baseline": read_metric("generic_intent_test_metrics.json"),
+        "query_type": read_metric("query_type_test_metrics.json"),
         "transformer": read_metric("distilbert_generic_intent_test_metrics.json"),
         "retrieval": read_metric("retrieval_eval_metrics.json"),
         "safety": read_metric("safety_eval_metrics.json"),
