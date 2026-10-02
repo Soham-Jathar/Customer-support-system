@@ -13,6 +13,8 @@ An explainable NLP system that understands customer messages, classifies the pro
 - Separate React customer portal and access-key-protected agent console, FastAPI API, SQLite development persistence, and optional PostgreSQL deployment.
 - Customer attachment intake for TXT, PDF, and DOCX complaints (2 MB maximum). Text is extracted in memory, analysed by the existing pipeline, and the original file is not retained.
 - End-to-end ticket lifecycle: customer-safe status tracking, agent-reviewed corrections, resolution notes, and restricted CSV feedback export for future retraining.
+- Multilingual safety path: language detection covers major Indian regional languages (including Hindi, Marathi, Bengali, Gujarati, Punjabi, Tamil, Telugu, Kannada, Malayalam, Odia, Assamese, and Urdu). Because the trained classifiers are English-only, non-English tickets are safely assigned for human review instead of being guessed.
+- Similarity-based duplicate-ticket candidates, a single focused clarification for missing operational details, policy-grounded editable agent reply drafts, and a customer-safe ticket-status timeline.
 
 ## Start the application
 
@@ -79,6 +81,10 @@ notepad .env
 ```
 
 Set a long `AGENT_ACCESS_KEY`, restart FastAPI, then use that key only on the Agent Console sign-in screen. This is prototype authorization, not production identity management.
+
+## Multilingual safety handling
+
+The prototype detects major Indian regional languages by language code and script. Its support classifiers are trained on English data, so a non-English ticket is explicitly sent to the Human Escalation Queue. This is a deliberate safety boundary: the system does not pretend that it can reliably classify text outside its training language.
 
 ## Human-feedback retraining loop
 

@@ -38,8 +38,12 @@ class Ticket(Base):
     status: Mapped[str] = mapped_column(String(24), default="open")
     escalation_reasons: Mapped[str] = mapped_column(Text, default="[]")
     entities: Mapped[str] = mapped_column(Text, default="{}")
+    verification: Mapped[str] = mapped_column(Text, default="{}")
+    language: Mapped[str] = mapped_column(Text, default="{}")
+    duplicate_candidates: Mapped[str] = mapped_column(Text, default="[]")
     retrieved_sources: Mapped[str] = mapped_column(Text, default="[]")
     attachment_name: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    agent_reply: Mapped[str | None] = mapped_column(Text, nullable=True)
     agent_outcome: Mapped[str | None] = mapped_column(Text, nullable=True)
 
     def as_dict(self) -> dict:
@@ -52,9 +56,27 @@ class Ticket(Base):
             "escalated": self.escalated == "true", "status": self.status,
             "escalation_reasons": json.loads(self.escalation_reasons),
             "entities": json.loads(self.entities), "retrieved_sources": json.loads(self.retrieved_sources),
+            "verification": json.loads(self.verification),
+            "language": json.loads(self.language),
+            "duplicate_candidates": json.loads(self.duplicate_candidates),
             "attachment_name": self.attachment_name,
+            "agent_reply": self.agent_reply,
             "agent_outcome": self.agent_outcome,
         }
+
+
+class TicketEvent(Base):
+    """Customer-safe lifecycle entries for a ticket-status timeline."""
+    __tablename__ = "ticket_events"
+
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    ticket_id: Mapped[str] = mapped_column(String(36), index=True)
+    status: Mapped[str] = mapped_column(String(32))
+    customer_message: Mapped[str] = mapped_column(String(180))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+
+    def as_dict(self) -> dict:
+        return {"status": self.status, "message": self.customer_message, "created_at": self.created_at.isoformat()}
 
 
 class TicketReview(Base):
@@ -86,9 +108,19 @@ class TicketReview(Base):
 def initialise_database() -> None:
     Base.metadata.create_all(bind=engine)
     # SQLite create_all does not add new columns to an existing local database.
-    if DATABASE_URL.startswith("sqlite") and "attachment_name" not in {column["name"] for column in inspect(engine).get_columns("tickets")}:
+    if DATABASE_URL.startswith("sqlite"):
+        columns = {column["name"] for column in inspect(engine).get_columns("tickets")}
+        migrations = {
+            "attachment_name": "ALTER TABLE tickets ADD COLUMN attachment_name VARCHAR(255)",
+            "verification": "ALTER TABLE tickets ADD COLUMN verification TEXT DEFAULT '{}'",
+            "language": "ALTER TABLE tickets ADD COLUMN language TEXT DEFAULT '{}'",
+            "duplicate_candidates": "ALTER TABLE tickets ADD COLUMN duplicate_candidates TEXT DEFAULT '[]'",
+            "agent_reply": "ALTER TABLE tickets ADD COLUMN agent_reply TEXT",
+        }
         with engine.begin() as connection:
-            connection.execute(text("ALTER TABLE tickets ADD COLUMN attachment_name VARCHAR(255)"))
+            for column, statement in migrations.items():
+                if column not in columns:
+                    connection.execute(text(statement))
 
 
 def save_ticket(result: dict, customer_message: str, attachment_name: str | None = None) -> dict:
@@ -98,10 +130,15 @@ def save_ticket(result: dict, customer_message: str, attachment_name: str | None
             sentiment=result["sentiment"], priority=result["priority"], department=result["department"],
             escalated=str(result["escalate_to_human"]).lower(),
             escalation_reasons=json.dumps(result["escalation_reasons"]), entities=json.dumps(mask_entities(result["entities"])),
+            verification=json.dumps(result.get("verification", {})),
+            language=json.dumps(result.get("language", {})),
+            duplicate_candidates=json.dumps(result.get("duplicate_candidates", [])),
             retrieved_sources=json.dumps(result.get("retrieved_sources", [])),
             attachment_name=attachment_name,
         )
         session.add(ticket)
+        session.flush()
+        session.add(TicketEvent(ticket_id=ticket.id, status="received", customer_message="Ticket received and routed to the appropriate support queue."))
         session.commit()
         session.refresh(ticket)
         return ticket.as_dict()

@@ -12,11 +12,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from sqlalchemy import select
 
-from src.database import SessionLocal, Ticket, TicketReview, initialise_database, save_ticket
+from src.database import SessionLocal, Ticket, TicketEvent, TicketReview, initialise_database, save_ticket
 from src.config import ROOT
 from src.auth import require_agent, verify_agent_key
 from src.service import analyse_ticket
 from src.attachments import extract_attachment_text
+from src.generation import generate_grounded_response
+from src.retrieval import grounded_suggestion
 
 
 @asynccontextmanager
@@ -46,10 +48,23 @@ class TicketResolution(BaseModel):
     reviewer: str = Field(default="Support agent", min_length=2, max_length=80)
     final_query_type: str | None = Field(default=None, max_length=64)
     final_intent: str | None = Field(default=None, max_length=96)
+    agent_reply: str | None = Field(default=None, max_length=2000)
 
 
 class AgentLogin(BaseModel):
     access_key: str = Field(min_length=8, max_length=256)
+
+
+class ClarificationRequest(BaseModel):
+    message: str = Field(min_length=3, max_length=5000)
+
+
+def customer_analysis_response(result: dict) -> dict:
+    """Remove internal duplicate matches from a public customer response."""
+    public = {**result, "duplicate_candidates": []}
+    if result.get("ticket"):
+        public["ticket"] = {**result["ticket"], "duplicate_candidates": []}
+    return public
 
 
 @app.get("/health")
@@ -102,7 +117,19 @@ def analyse(request: TicketRequest) -> dict:
     result = analyse_ticket(request.message)
     if request.save:
         result["ticket"] = save_ticket(result, request.message)
-    return result
+    return customer_analysis_response(result)
+
+
+@app.post("/tickets/clarify")
+def clarify_ticket(request: ClarificationRequest) -> dict:
+    """Determine whether one safe follow-up question is needed before saving."""
+    result = analyse_ticket(request.message)
+    return {
+        "ready": result["clarification_question"] is None,
+        "question": result["clarification_question"],
+        "query_type": result["query_type"],
+        "language": result["language"],
+    }
 
 
 @app.post("/tickets/analyse-attachment")
@@ -118,7 +145,7 @@ async def analyse_attachment(file: UploadFile = File(...), save: bool = Form(Tru
     }
     if save:
         result["ticket"] = save_ticket(result, attachment.text, attachment_name=attachment.filename)
-    return result
+    return customer_analysis_response(result)
 
 
 @app.post("/agent/login")
@@ -148,6 +175,7 @@ def ticket_status(ticket_id: str) -> dict:
         ticket = session.get(Ticket, ticket_id)
         if ticket is None:
             raise HTTPException(status_code=404, detail="Ticket reference not found")
+        timeline = session.scalars(select(TicketEvent).where(TicketEvent.ticket_id == ticket.id).order_by(TicketEvent.created_at.asc())).all()
         return {
             "id": ticket.id,
             "created_at": ticket.created_at.isoformat(),
@@ -155,7 +183,24 @@ def ticket_status(ticket_id: str) -> dict:
             "priority": ticket.priority,
             "assigned_queue": ticket.department,
             "human_review": ticket.escalated == "true",
+            "timeline": [event.as_dict() for event in timeline],
         }
+
+
+@app.post("/tickets/{ticket_id}/draft-reply", dependencies=[Depends(require_agent)])
+def draft_ticket_reply(ticket_id: str) -> dict:
+    """Prepare an editable reply constrained to policy sources stored on a ticket."""
+    with SessionLocal() as session:
+        ticket = session.get(Ticket, ticket_id)
+        if ticket is None:
+            raise HTTPException(status_code=404, detail="Ticket reference not found")
+        payload = ticket.as_dict()
+        sources = payload["retrieved_sources"]
+        answer = generate_grounded_response(ticket.customer_message, sources, payload["escalated"])
+        if answer is None:
+            answer = grounded_suggestion(sources, payload["escalated"])
+        prefix = "Hello, thank you for contacting support. "
+        return {"draft": prefix + answer["answer"], "source_ids": [source["id"] for source in sources], "grounded": answer.get("grounded", False)}
 
 
 @app.patch("/tickets/{ticket_id}", dependencies=[Depends(require_agent)])
@@ -166,6 +211,7 @@ def resolve_ticket(ticket_id: str, update: TicketResolution) -> dict:
             raise HTTPException(status_code=404, detail="Ticket not found")
         ticket.status = update.status
         ticket.agent_outcome = update.agent_outcome
+        ticket.agent_reply = update.agent_reply
         if update.final_query_type or update.final_intent or update.agent_outcome:
             review = session.scalar(select(TicketReview).where(TicketReview.ticket_id == ticket.id))
             if review is None:
@@ -175,6 +221,7 @@ def resolve_ticket(ticket_id: str, update: TicketResolution) -> dict:
             review.final_query_type = update.final_query_type
             review.final_intent = update.final_intent
             review.notes = update.agent_outcome
+        session.add(TicketEvent(ticket_id=ticket.id, status=update.status, customer_message={"resolved": "Resolved by the support team.", "in_progress": "Your ticket is now being reviewed by the support team.", "open": "Your ticket remains open with the assigned support team."}[update.status]))
         session.commit()
         session.refresh(ticket)
         return ticket_payload(ticket, session)

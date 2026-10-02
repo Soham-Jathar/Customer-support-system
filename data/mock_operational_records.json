@@ -1,0 +1,12 @@
+{
+  "orders": [
+    {"reference": "ORD-12345", "status": "delayed", "tracking_reference": "TRK-884421", "customer_ref": "demo-customer-01"},
+    {"reference": "ORD-78901", "status": "delivered", "tracking_reference": "TRK-105902", "customer_ref": "demo-customer-02"},
+    {"reference": "ORD-45678", "status": "processing", "tracking_reference": null, "customer_ref": "demo-customer-03"}
+  ],
+  "transactions": [
+    {"reference": "TXN-123456", "status": "posted", "amount": "$125.50", "card_last_four": "4821", "customer_ref": "demo-customer-01"},
+    {"reference": "TXN-445566", "status": "duplicate_review", "amount": "$250", "card_last_four": "9914", "customer_ref": "demo-customer-04"},
+    {"reference": "TXN-778899", "status": "refund_pending", "amount": "$89.99", "card_last_four": "3276", "customer_ref": "demo-customer-02"}
+  ]
+}
